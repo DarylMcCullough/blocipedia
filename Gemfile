@@ -20,7 +20,7 @@
  gem 'jquery-rails'
  gem 'turbolinks'
  gem 'bootstrap'
- gem 'figaro'
+ gem 'figaro', '1.0'
 
  group :development, :test do
    gem 'byebug'
