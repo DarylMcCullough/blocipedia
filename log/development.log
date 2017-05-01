@@ -2192,3 +2192,3536 @@ Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
             FROM sqlite_temp_master
             WHERE name='index_users_on_email' AND type='index'
 
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 18:16:05 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 19ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 108.12.54.194 at 2017-04-30 18:16:06 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (43.8ms)
+Completed 200 OK in 250ms (Views: 238.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 18:29:45 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 21ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 108.12.54.194 at 2017-04-30 18:29:47 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (124.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (160.4ms)
+Completed 200 OK in 620ms (Views: 607.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-04-30 18:30:06 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-04-30 18:30:19 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hgxx9rhNN5opJP1f1ImM8W1s5gi9N6O3eew8cVpwK+VU38yGOSW6/8fgcb1u5TYTI5wverjUXkLUnPQBRRUeXQ==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$dapzS9i90Xb9OpQNx3.q8eTiJ7YAt5kDd4sXqsCLnsLtm0pj.VTYS"], ["created_at", "2017-04-30 18:30:20.119391"], ["updated_at", "2017-04-30 18:30:20.119391"], ["confirmation_token", "YFWypcUyb-HqiQjeP3hj"], ["confirmation_sent_at", "2017-04-30 18:30:20.119729"]]
+  [1m[36m (9.4ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (3.6ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 255.3ms
+
+Sent mail to stevendaryl3016@yahoo.com (720.2ms)
+Date: Sun, 30 Apr 2017 18:30:20 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59062d3c7f91e_4ed73f80fd560d8455937@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://bloc-foundation-darylmcc.c9users.io/users/confirmation?confirmation_token=YFWypcUyb-HqiQjeP3hj">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 1500ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 18:30:21 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 108.12.54.194 at 2017-04-30 18:30:21 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 18:30:39 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 108.12.54.194 at 2017-04-30 18:30:39 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (4.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 109ms (Views: 23.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 18:38:58 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 269ms (Views: 258.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-04-30 18:39:02 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (491.7ms)
+Completed 200 OK in 521ms (Views: 509.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-04-30 18:39:12 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6KwPL/PDRHsG+s6qSY3JV6NezMhEMTyGRaT0vcgphfU6f7JfcqvJHug+Qkjz4XO17a4FukHSwXPo1DzN10ywTQ==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (4.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 208ms (Views: 26.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users/confirmation/new" for 108.12.54.194 at 2017-04-30 18:39:22 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::ConfirmationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.6ms)
+  Rendered devise/confirmations/new.html.erb within layouts/application (19.9ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/confirmation" for 108.12.54.194 at 2017-04-30 18:39:32 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::ConfirmationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Sfx4gNHwj7/Xqa8ftMVNOaaB/yLeIXwBLzY60kTzUzmbL8XwUJgC2jltI/0Oqffb6HE2UNvCgfSCRvKiW5ZmgQ==", "user"=>{"email"=>"stevendaryl3016@yahoo.com"}, "commit"=>"Resend confirmation instructions"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."unconfirmed_email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["unconfirmed_email", "stevendaryl3016@yahoo.com"]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "stevendaryl3016@yahoo.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  Rendered devise/mailer/confirmation_instructions.html.erb (4.0ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 150.6ms
+
+Sent mail to stevendaryl3016@yahoo.com (666.0ms)
+Date: Sun, 30 Apr 2017 18:39:32 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59062f6439c95_4f083fe1358e00e88595f@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://bloc-foundation-darylmcc.c9users.io/users/confirmation?confirmation_token=YFWypcUyb-HqiQjeP3hj">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/users/sign_in
+Completed 302 Found in 851ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_in" for 108.12.54.194 at 2017-04-30 18:39:33 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (3.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+SignupMailer#test_mail: processed outbound mail in 12.4ms
+
+SignupMailer#test_mail: processed outbound mail in 7.0ms
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (3.5ms)
+
+SignupMailer#test_mail: processed outbound mail in 200.6ms
+
+Sent mail to stevendaryl3016@yahoo.com (535.2ms)
+Date: Sun, 30 Apr 2017 19:51:10 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906402e155c7_6732cbd0e0369f3@darylmcc-blocipedia-4795177.mail>
+Subject: Testing
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (10.7ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime, "confirmation_sent_at" datetime, "unconfirmed_email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.2ms)[0m  select sqlite_version(*)
+  [1m[36m (10.8ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (10.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (9.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (11.4ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (9.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170427181008')[0m
+  [1m[35m (10.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170424222713')
+  [1m[36m (9.9ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime, "confirmation_sent_at" datetime, "unconfirmed_email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (7.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (15.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (7.9ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (11.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (16.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170427181008')[0m
+  [1m[35m (16.4ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170424222713')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 20:04:04 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 247ms (Views: 233.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-04-30 20:04:09 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (642.9ms)
+Completed 200 OK in 671ms (Views: 658.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-04-30 20:04:23 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9dH6YApniyQ972n//q415+TUGfiaH+YAELz/xtRX7alngf9ocAfgqmb8CYJq89x4EupMJzquhUijhf8VgGBiiQ==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$W/tSUdvNfmFDXBN1dtSNHuGRLLRWAeKMH3qB8mbZYGdYaNkMA2csi"], ["created_at", "2017-04-30 20:04:23.686069"], ["updated_at", "2017-04-30 20:04:23.686069"], ["confirmation_token", "vzyehbXFkEgW1gxTsRaf"], ["confirmation_sent_at", "2017-04-30 20:04:23.686372"]]
+  [1m[36m (10.9ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (3.9ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 144.7ms
+
+Sent mail to stevendaryl3016@yahoo.com (573.8ms)
+Date: Sun, 30 Apr 2017 20:04:23 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59064347d2c03_677e3f9dcf73cbc867787@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://bloc-foundation-darylmcc.c9users.io/users/confirmation?confirmation_token=vzyehbXFkEgW1gxTsRaf">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 923ms (ActiveRecord: 11.5ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 20:04:24 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 20:10:33 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 222ms (Views: 212.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-04-30 20:10:36 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (538.5ms)
+Completed 200 OK in 566ms (Views: 554.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-04-30 20:10:49 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IouxskSmPwzemzzTV31WTSmrFbU2Fvy5wpJjmICtkQqw27S6PsZUgoWIXK7DIL/S35VAapann/Fxq2NL1JoeKg==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (3.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 187ms (Views: 21.1ms | ActiveRecord: 0.4ms)
+  [1m[36mUser Load (3.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 1]]
+  [1m[36m (9.7ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 20:11:50 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 225ms (Views: 214.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-04-30 20:11:53 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (537.5ms)
+Completed 200 OK in 564ms (Views: 553.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-04-30 20:12:09 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d1+BohMqxj/mTHM2LfK6AzcUCBUg2YvK8Kuo1xrVFazlD4SqaUqtsb1fE0u5r1OcwSpdyoBo6IJDkqgETuKajA==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$bUqwAkV.Jlq2.r.vGlbyKORQXFfOrmcgFYQFTRVzbUKrZ7UaMWjjq"], ["created_at", "2017-04-30 20:12:09.901800"], ["updated_at", "2017-04-30 20:12:09.901800"], ["confirmation_token", "oFxfxnxFxZjmbzDBH6A6"], ["confirmation_sent_at", "2017-04-30 20:12:09.902104"]]
+  [1m[36m (11.8ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (4.0ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 143.4ms
+
+Sent mail to stevendaryl3016@yahoo.com (685.9ms)
+Date: Sun, 30 Apr 2017 20:12:10 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906451a125e5_67c03f9aeafc893c7208a@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://bloc-foundation-darylmcc.c9users.io/users/confirmation?confirmation_token=oFxfxnxFxZjmbzDBH6A6">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 1018ms (ActiveRecord: 12.4ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 20:12:11 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 20:21:38 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 334ms (Views: 322.5ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (3.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  [1m[35m (10.4ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 20:22:27 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 298ms (Views: 286.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-04-30 20:22:30 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (688.0ms)
+Completed 200 OK in 726ms (Views: 708.7ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-04-30 20:22:43 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kLJSv9s7EKuenmWLKOaFvFpAWFFZjvpkq19SuccNWlMC4le3oVt7JcWNBfa8u2wjrH4Njvk/mSwYZlJqkzrVcw==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$Q44LKMfSOsrK80vvyWGmSeOQWt9aU1URzjtqwY.1tC05gjPfkjSHS"], ["created_at", "2017-04-30 20:22:44.073563"], ["updated_at", "2017-04-30 20:22:44.073563"], ["confirmation_token", "YBx3akAFDYYAg_e9ejnP"], ["confirmation_sent_at", "2017-04-30 20:22:44.074175"]]
+  [1m[36m (13.0ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (6.4ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 191.1ms
+
+Sent mail to stevendaryl3016@yahoo.com (653.8ms)
+Date: Sun, 30 Apr 2017 20:22:44 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906479449ea1_68403f80cd75a8cc68945@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://bloc-foundation-darylmcc.c9users.io/users/confirmation?confirmation_token=YBx3akAFDYYAg_e9ejnP">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 1069ms (ActiveRecord: 13.8ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 20:22:45 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  DELETE FROM "users" WHERE "users"."id" = ?  [["id", 3]]
+  [1m[36m (10.0ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 20:24:47 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 296ms (Views: 284.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-04-30 20:24:50 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (754.8ms)
+Completed 200 OK in 787ms (Views: 773.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-04-30 20:25:02 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KGfbWJm5Re+azU7pN2gI/W2aGpfUAY5ZcyfGFKERbHe6N95Q49kuYcHeLpSjNeFim6RPSHSw7RHAHsbH9SbjVw==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$YQaw36GUJ349HAqx2sRVSe/U29vv.GUFob392jFQdrcE7euobubsG"], ["created_at", "2017-04-30 20:25:02.997030"], ["updated_at", "2017-04-30 20:25:02.997030"], ["confirmation_token", "ibxJdCv_3mbvDGx-byjw"], ["confirmation_sent_at", "2017-04-30 20:25:02.997529"]]
+  [1m[36m (14.7ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (5.2ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 150.8ms
+
+Sent mail to stevendaryl3016@yahoo.com (575.8ms)
+Date: Sun, 30 Apr 2017 20:25:03 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906481f2dc20_685e3f83a2fbdcf8572dc@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://bloc-foundation-darylmcc.c9users.io/users/confirmation?confirmation_token=ibxJdCv_3mbvDGx-byjw">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 942ms (ActiveRecord: 15.4ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 20:25:04 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  [1m[35m (8.9ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 20:28:39 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 321ms (Views: 214.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-04-30 20:28:43 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (504.2ms)
+Completed 200 OK in 532ms (Views: 520.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-04-30 20:28:55 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aHgnETiBpRiz6kO/dgrn48g3vf8gsIOpuchTgrqJ6Hb6KCIZQuHOluj5I8LiVw58PgnoIIAB4OEK8VNR7r5nVg==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$AVjn7aFDl/oIYAh890pBXeYiuMIIRR61Crmcv8X.cmyVylc8FM66W"], ["created_at", "2017-04-30 20:28:55.512080"], ["updated_at", "2017-04-30 20:28:55.512080"], ["confirmation_token", "dz2TjsCfkN1yETqE93a7"], ["confirmation_sent_at", "2017-04-30 20:28:55.512402"]]
+  [1m[36m (12.8ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (3.3ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 117.1ms
+
+Sent mail to stevendaryl3016@yahoo.com (583.8ms)
+Date: Sun, 30 Apr 2017 20:28:55 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59064907a0bde_68a23fa020fb02fc1036e@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=dz2TjsCfkN1yETqE93a7">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 892ms (ActiveRecord: 13.5ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 20:28:56 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 21:41:37 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 255ms (Views: 241.6ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  [1m[35m (9.4ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 21:42:10 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 252ms (Views: 241.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-04-30 21:42:13 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (636.0ms)
+Completed 200 OK in 675ms (Views: 658.9ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-04-30 21:42:26 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9j9DYV8FBVvMR/AnQT2kHS1MEq2v7XsIY6Q8ACIz2ltkb0ZpJWVu1ZdUkFrVYE2C23JHcg9cGEDQnTzTdgRVew==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$DY19TRRjWelaW3BgEd41mu5w0epNr342StHyd0KYh9lE4nlpI2O66"], ["created_at", "2017-04-30 21:42:26.740106"], ["updated_at", "2017-04-30 21:42:26.740106"], ["confirmation_token", "wBoi_MuRF542ZrXmq8ir"], ["confirmation_sent_at", "2017-04-30 21:42:26.740427"]]
+  [1m[36m (15.9ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (6.2ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 184.8ms
+
+Sent mail to stevendaryl3016@yahoo.com (688.3ms)
+Date: Sun, 30 Apr 2017 21:42:26 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59065a42eb9e6_6cfc3fb9a6fc057c174f0@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=wBoi_MuRF542ZrXmq8ir">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 1088ms (ActiveRecord: 16.6ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 21:42:28 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 6]]
+  [1m[35m (8.9ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 21:50:24 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 248ms (Views: 238.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-04-30 21:50:27 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (511.7ms)
+Completed 200 OK in 539ms (Views: 527.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-04-30 21:50:38 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rd5iNRWWMf+FZeEPTWqlkPwg7FQJ2t/dFaSoImYDuXvXjmc9b/Zacd52gXLZN0wPCh65i6lrvJWmnajxMjQ2Ww==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$.kjgaAS/TcwxOgo1BMFLduWvrwzI4YvwQsjqG5031zQ/uWuclWgdK"], ["created_at", "2017-04-30 21:50:38.418403"], ["updated_at", "2017-04-30 21:50:38.418403"], ["confirmation_token", "aiQTrU7jTqxRAxVXz1yD"], ["confirmation_sent_at", "2017-04-30 21:50:38.418735"]]
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (3.5ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 119.4ms
+
+Sent mail to stevendaryl3016@yahoo.com (563.0ms)
+Date: Sun, 30 Apr 2017 21:50:38 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59065c2e8a073_6d4c3feb50fb022c8793c@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=aiQTrU7jTqxRAxVXz1yD">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 873ms (ActiveRecord: 11.2ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 21:50:39 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 22:00:52 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 252ms (Views: 241.7ms | ActiveRecord: 0.0ms)
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (2.3ms)
+
+SignupMailer#test_mail: processed outbound mail in 301.2ms
+
+Sent mail to stevendaryl3016@yahoo.com (545.2ms)
+Date: Sun, 30 Apr 2017 22:02:41 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59065f01c46b3_6e644830f01390@darylmcc-blocipedia-4795177.mail>
+Subject: Testing
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (2.3ms)
+
+SignupMailer#test_mail: processed outbound mail in 278.9ms
+
+Sent mail to stevendaryl3016@yahoo.com (543.4ms)
+Date: Sun, 30 Apr 2017 22:02:53 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59065f0dd308_6e75126b0f088680@darylmcc-blocipedia-4795177.mail>
+Subject: Testing
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 7]]
+  [1m[35m (26.8ms)[0m  commit transaction
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (1.5ms)
+
+SignupMailer#test_mail: processed outbound mail in 222.5ms
+
+Sent mail to stevendaryl3016@yahoo.com (535.0ms)
+Date: Sun, 30 Apr 2017 22:04:14 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59065f5e32a92_6e8af290f4700e8@darylmcc-blocipedia-4795177.mail>
+Subject: Testing
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 22:04:33 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 274ms (Views: 265.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-04-30 22:04:39 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (468.4ms)
+Completed 200 OK in 499ms (Views: 484.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-04-30 22:04:49 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"p6uWIVAogeIYDc2lFR3hIUUFOkiDNvWxyAN5DrrgO0o1+5MpKkjqbEMerdiBQAi+sztvlyOHlvl7Onnd7te0ag==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$mhM04hLYNh8qSpkjIBp7H.L8Ke8Sqcn/rBjqV1JU6YZdNxUA9uPJK"], ["created_at", "2017-04-30 22:04:49.601237"], ["updated_at", "2017-04-30 22:04:49.601237"], ["confirmation_token", "SwhxUEdVMyJ1hFpasqj5"], ["confirmation_sent_at", "2017-04-30 22:04:49.601708"]]
+  [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (4.4ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 16.9ms
+
+Sent mail to stevendaryl3016@yahoo.com (566.3ms)
+Date: Sun, 30 Apr 2017 22:04:49 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59065f819efa4_6e8a306310c7017d@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=SwhxUEdVMyJ1hFpasqj5">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 798ms (ActiveRecord: 11.7ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 22:04:50 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+  Rendered devise/mailer/confirmation_instructions.html.erb (240.2ms)
+
+ActionMailer::Base#mail: processed outbound mail in 251.1ms
+  Rendered devise/mailer/confirmation_instructions.html.erb (240.6ms)
+
+ActionMailer::Base#mail: processed outbound mail in 251.8ms
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 22:10:51 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 247ms (Views: 235.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-04-30 22:10:53 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (515.7ms)
+Completed 200 OK in 548ms (Views: 533.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-04-30 22:11:04 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wBd1vOkt7V734ilLiLI00SEF5+ziyfc5U1dc/me3eYpSR3C0k02G0KzxSTYc791O1zuyM0J4lHHgblwtM4D2qg==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (5.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 229ms (Views: 29.8ms | ActiveRecord: 0.5ms)
+  [1m[36mUser Load (2.1ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 8]]
+  [1m[35m (10.0ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 22:11:53 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 307ms (Views: 290.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-04-30 22:12:04 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (551.1ms)
+Completed 200 OK in 583ms (Views: 569.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-04-30 22:12:14 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v5VtUYEC/5xZ5KrJpn0s4IS5qCbOGWSxJi8Q8CK/BEItxWhZ+2KUEgL3yrQyIMV/cof9+W6oB/mVFhAjdoiLYg==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$YJZ3TiGlFFGp2kNZHQfL4O4TWoTIVXvoaCWp7IK7thTp.9dataRka"], ["created_at", "2017-04-30 22:12:14.894638"], ["updated_at", "2017-04-30 22:12:14.894638"], ["confirmation_token", "MpWLdAR2Y_4EhEx3YWwk"], ["confirmation_sent_at", "2017-04-30 22:12:14.895132"]]
+  [1m[36m (31.1ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (6.1ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 188.6ms
+
+Sent mail to stevendaryl3016@yahoo.com (587.6ms)
+Date: Sun, 30 Apr 2017 22:12:15 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906613f21b10_6f6b3fca05032c44218de@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=MpWLdAR2Y_4EhEx3YWwk">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 1023ms (ActiveRecord: 31.9ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 22:12:16 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 16ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+  Rendered signup_mailer/test_mail.html.erb (2.3ms)
+
+ActionMailer::Base#mail: processed outbound mail in 279.2ms
+
+Sent mail to stevendaryl3016@yahoo.com (576.1ms)
+Date: Sun, 30 Apr 2017 22:15:06 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590661ea111be_6f9b10c90f873c1@darylmcc-blocipedia-4795177.mail>
+Subject: Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  Rendered signup_mailer/test_mail.html.erb (2.3ms)
+
+ActionMailer::Base#mail: processed outbound mail in 288.4ms
+
+Sent mail to stevendaryl3016@yahoo.com (575.2ms)
+Date: Sun, 30 Apr 2017 22:15:13 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590661f12309_6fa812f30e095976@darylmcc-blocipedia-4795177.mail>
+Subject: Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (1.5ms)
+
+SignupMailer#test_mail: processed outbound mail in 229.2ms
+
+Sent mail to stevendaryl3016@yahoo.com (531.6ms)
+Date: Sun, 30 Apr 2017 22:17:50 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906628e89605_6fce4710f8236b6@darylmcc-blocipedia-4795177.mail>
+Subject: Testing
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (1.7ms)
+
+SignupMailer#test_mail: processed outbound mail in 232.3ms
+
+Sent mail to stevendaryl3016@yahoo.com (555.5ms)
+Date: Sun, 30 Apr 2017 22:17:55 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590662938124_6fd8f870dc82835@darylmcc-blocipedia-4795177.mail>
+Subject: Testing
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+
+ActionMailer::Base#mail: processed outbound mail in 8.1ms
+
+ActionMailer::Base#mail: processed outbound mail in 11.5ms
+  Rendered signup_mailer/test_mail.html.erb (1.4ms)
+
+ActionMailer::Base#mail: processed outbound mail in 185.5ms
+
+Sent mail to stevendaryl3016@yahoo.com (566.4ms)
+Date: Sun, 30 Apr 2017 22:23:08 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590663cc28835_7038d5d0e048648@darylmcc-blocipedia-4795177.mail>
+Subject: Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  Rendered signup_mailer/test_mail.html.erb (1.4ms)
+
+ActionMailer::Base#mail: processed outbound mail in 190.2ms
+
+Sent mail to stevendaryl3016@yahoo.com (570.3ms)
+Date: Sun, 30 Apr 2017 22:23:15 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590663d312b95_704610850d85842e@darylmcc-blocipedia-4795177.mail>
+Subject: Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (2.2ms)
+
+SignupMailer#test_mail: processed outbound mail in 251.0ms
+
+Sent mail to stevendaryl3016@yahoo.com (530.4ms)
+Date: Sun, 30 Apr 2017 22:30:39 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906658f5f41a_70cb7cf0d8359f8@darylmcc-blocipedia-4795177.mail>
+Subject: Testing
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.1ms)
+
+SignupMailer#test_mail1: processed outbound mail in 7.3ms
+
+Sent mail to stevendaryl3016@yahoo.com (527.0ms)
+Date: Sun, 30 Apr 2017 22:30:39 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906658fe1d97_70cb7cf0d83604e@darylmcc-blocipedia-4795177.mail>
+Subject: Testing
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (2.2ms)
+
+SignupMailer#test_mail: processed outbound mail in 233.3ms
+
+Sent mail to stevendaryl3016@yahoo.com (539.8ms)
+Date: Sun, 30 Apr 2017 22:31:12 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590665b0ce55_70dea450ec41883@darylmcc-blocipedia-4795177.mail>
+Subject: Testing
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.0ms)
+
+SignupMailer#test_mail1: processed outbound mail in 5.5ms
+
+Sent mail to stevendaryl3016@yahoo.com (525.2ms)
+Date: Sun, 30 Apr 2017 22:31:12 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590665b091426_70dea450ec41942@darylmcc-blocipedia-4795177.mail>
+Subject: Different Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (1.5ms)
+
+SignupMailer#test_mail: processed outbound mail in 217.4ms
+
+Sent mail to stevendaryl3016@yahoo.com (536.3ms)
+Date: Sun, 30 Apr 2017 22:32:47 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906660f97806_70f2ea10dc567e8@darylmcc-blocipedia-4795177.mail>
+Subject: Testing
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.1ms)
+
+SignupMailer#test_mail1: processed outbound mail in 7.9ms
+
+Sent mail to stevendaryl3016@yahoo.com (524.1ms)
+Date: Sun, 30 Apr 2017 22:32:48 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906661027a9b_70f2ea10dc5688c@darylmcc-blocipedia-4795177.mail>
+Subject: Different Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb (2.3ms)
+
+ActionMailer::Base#mail: processed outbound mail in 246.9ms
+
+Sent mail to stevendaryl3016@yahoo.com (566.9ms)
+Date: Sun, 30 Apr 2017 22:35:07 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906669b43e6a_711412bf0ec7231e@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  Rendered signup_mailer/test_mail.html.erb (1.5ms)
+
+ActionMailer::Base#mail: processed outbound mail in 195.7ms
+
+Sent mail to stevendaryl3016@yahoo.com (570.4ms)
+Date: Sun, 30 Apr 2017 22:35:15 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590666a3572a7_7122f0d0e860611@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  Rendered signup_mailer/test_mail.html.erb (0.1ms)
+
+ActionMailer::Base#mail: processed outbound mail in 7.2ms
+
+Sent mail to stevendaryl3016@yahoo.com (558.4ms)
+Date: Sun, 30 Apr 2017 22:41:32 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906681c661a2_714212bf0ec72425@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.1ms)
+
+SignupMailer#test_mail1: processed outbound mail in 10.9ms
+
+Sent mail to stevendaryl3016@yahoo.com (525.2ms)
+Date: Sun, 30 Apr 2017 22:43:13 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590668812dc8b_715f12bf0ec7242f@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.1ms)
+
+SignupMailer#test_mail1: processed outbound mail in 11.4ms
+
+Sent mail to stevendaryl3016@yahoo.com (521.1ms)
+Date: Sun, 30 Apr 2017 22:46:04 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906692ccb706_717a12bf0ec724ba@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.1ms)
+
+SignupMailer#test_mail2: processed outbound mail in 14.6ms
+
+Sent mail to stevendaryl3016@yahoo.com (557.8ms)
+Date: Sun, 30 Apr 2017 22:48:56 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590669d87ad71_71a612bf0ec724bb@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.1ms)
+
+SignupMailer#test_mail: processed outbound mail in 8.0ms
+
+Sent mail to stevendaryl3016@yahoo.com (527.4ms)
+Date: Sun, 30 Apr 2017 22:50:32 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59066a38ae9e3_71a612bf0ec725ad@darylmcc-blocipedia-4795177.mail>
+Subject: Testing
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.1ms)
+
+SignupMailer#test_mail: processed outbound mail in 16.6ms
+
+Sent mail to stevendaryl3016@yahoo.com (523.7ms)
+Date: Sun, 30 Apr 2017 22:52:17 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59066aa19562f_71bb12bf0ec72454@darylmcc-blocipedia-4795177.mail>
+Subject: Testing
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.1ms)
+
+SignupMailer#test_mail3: processed outbound mail in 11.7ms
+
+Sent mail to stevendaryl3016@yahoo.com (521.9ms)
+Date: Sun, 30 Apr 2017 22:55:21 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59066b59289b2_721b12bf0ec72460@darylmcc-blocipedia-4795177.mail>
+Subject: Testing3
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.1ms)
+
+SignupMailer#test_mail4: processed outbound mail in 10.8ms
+
+Sent mail to stevendaryl3016@yahoo.com (525.4ms)
+Date: Sun, 30 Apr 2017 22:58:29 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59066c1588cb7_723f12bf0ec724b2@darylmcc-blocipedia-4795177.mail>
+Subject: Testing4
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.1ms)
+
+SignupMailer#test: processed outbound mail in 13.1ms
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.0ms)
+
+SignupMailer#test_mail4: processed outbound mail in 7.4ms
+
+Sent mail to stevendaryl3016@yahoo.com (524.9ms)
+Date: Sun, 30 Apr 2017 23:08:13 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59066e5d12713_727412bf0ec72442@darylmcc-blocipedia-4795177.mail>
+Subject: Testing4
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.1ms)
+
+SignupMailer#test5: processed outbound mail in 12.4ms
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.1ms)
+
+SignupMailer#test5: processed outbound mail in 5.2ms
+
+Sent mail to stevendaryl3016@yahoo.com (528.7ms)
+Date: Sun, 30 Apr 2017 23:12:08 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59066f48ced64_728e12bf0ec7244e@darylmcc-blocipedia-4795177.mail>
+Subject: Testing6
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.0ms)
+
+SignupMailer#test_mail4: processed outbound mail in 5.7ms
+
+Sent mail to stevendaryl3016@yahoo.com (523.8ms)
+Date: Sun, 30 Apr 2017 23:14:10 +0000
+From: from@example.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59066fc2dc1f5_728e12bf0ec725da@darylmcc-blocipedia-4795177.mail>
+Subject: Testing4
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb (0.0ms)
+
+ActionMailer::Base#mail: processed outbound mail in 5.2ms
+
+Sent mail to stevendaryl3016@yahoo.com (1.4ms)
+Date: Sun, 30 Apr 2017 23:16:41 +0000
+To: stevendaryl3016@yahoo.com
+Message-ID: <59067059e7979_728e12bf0ec726fc@darylmcc-blocipedia-4795177.mail>
+Subject: Testing6
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  Rendered signup_mailer/test_mail.html.erb (0.1ms)
+
+ActionMailer::Base#mail: processed outbound mail in 5.6ms
+
+Sent mail to stevendaryl3016@yahoo.com (1.5ms)
+Date: Sun, 30 Apr 2017 23:18:10 +0000
+To: stevendaryl3016@yahoo.com
+Message-ID: <590670b2dd27_728e12bf0ec72715@darylmcc-blocipedia-4795177.mail>
+Subject: Testing6
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  Rendered signup_mailer/test_mail.html.erb (0.1ms)
+
+ActionMailer::Base#mail: processed outbound mail in 8.5ms
+
+Sent mail to stevendaryl3016@yahoo.com (566.6ms)
+Date: Sun, 30 Apr 2017 23:19:06 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590670eadada_728e12bf0ec72885@darylmcc-blocipedia-4795177.mail>
+Subject: Testing6
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.1ms)
+
+ActionMailer::Base#mail: processed outbound mail in 8.4ms
+
+Sent mail to stevendaryl3016@yahoo.com (522.1ms)
+Date: Sun, 30 Apr 2017 23:23:43 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590671ff300da_728e12bf0ec7293f@darylmcc-blocipedia-4795177.mail>
+Subject: Testing6
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (0.0ms)
+
+ActionMailer::Base#mail: processed outbound mail in 5.3ms
+
+Sent mail to stevendaryl3016@yahoo.com (535.5ms)
+Date: Sun, 30 Apr 2017 23:32:05 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590673f59d99b_728e12bf0ec7304e@darylmcc-blocipedia-4795177.mail>
+Subject: Testing6
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  Rendered signup_mailer/test_mail.html.erb (1.6ms)
+
+ActionMailer::Base#mail: processed outbound mail in 227.8ms
+
+Sent mail to stevendaryl3016@yahoo.com (738.8ms)
+Date: Sun, 30 Apr 2017 23:35:50 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590674d6d0fb2_72d5b910e03021c@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  Rendered signup_mailer/test_mail.html.erb (3.5ms)
+
+ActionMailer::Base#mail: processed outbound mail in 311.5ms
+
+Sent mail to stevendaryl3016@yahoo.com (582.8ms)
+Date: Sun, 30 Apr 2017 23:38:23 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906756fbc465_731210e10e0787e4@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  Rendered signup_mailer/test_mail.html.erb (2.2ms)
+
+ActionMailer::Base#mail: processed outbound mail in 227.4ms
+
+Sent mail to stevendaryl3016@yahoo.com (571.7ms)
+Date: Sun, 30 Apr 2017 23:38:51 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906758b746f7_7320f290e0610c5@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 23:39:10 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 259ms (Views: 249.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-04-30 23:39:13 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (499.6ms)
+Completed 200 OK in 534ms (Views: 517.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-04-30 23:39:23 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mzHTtSSaewkjeiJLEpimt7XmciijXyLo3sFNF/v/264JYda9XvoQh3hpQjaGxU8oQ9gn9wPuQaBt+E3Er8hUjg==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered devise/shared/_links.html.erb (13.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (20.9ms)
+Completed 200 OK in 262ms (Views: 40.8ms | ActiveRecord: 0.5ms)
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 9]]
+  [1m[35m (9.9ms)[0m  commit transaction
+  Rendered signup_mailer/test_mail.html.erb (2.4ms)
+
+ActionMailer::Base#mail: processed outbound mail in 210.8ms
+
+Sent mail to stevendaryl3016@yahoo.com (568.2ms)
+Date: Sun, 30 Apr 2017 23:39:56 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590675cca9875_733eb630f0926aa@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 23:39:59 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 281ms (Views: 271.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-04-30 23:40:02 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (432.0ms)
+Completed 200 OK in 485ms (Views: 463.3ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-04-30 23:40:13 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kvgh7hrPIaQaj5h9rVTqD1MSxZAcYcXnqVJ+nXtwB8MAqCTmYK9KKkGc+AA5CQOQpSyQT7zQpq8aa35OL0eI4w==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$.973OjyN8CBVX1MIBKMCquIyQD7Q4FhiM9YuWBGgEQScywhMqCFvW"], ["created_at", "2017-04-30 23:40:13.778030"], ["updated_at", "2017-04-30 23:40:13.778030"], ["confirmation_token", "eGf-zWemV_yZ6vsGbfrz"], ["confirmation_sent_at", "2017-04-30 23:40:13.778421"]]
+  [1m[36m (21.3ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (4.1ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 15.3ms
+
+Sent mail to stevendaryl3016@yahoo.com (569.1ms)
+Date: Sun, 30 Apr 2017 23:40:13 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590675ddca69a_733e3f9af3b9647892798@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="http://localhost:3000/users/confirmation?confirmation_token=eGf-zWemV_yZ6vsGbfrz">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 800ms (ActiveRecord: 22.1ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 23:40:14 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 20ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+  Rendered signup_mailer/test_mail.html.erb (1.7ms)
+
+ActionMailer::Base#mail: processed outbound mail in 209.2ms
+
+Sent mail to stevendaryl3016@yahoo.com (576.1ms)
+Date: Sun, 30 Apr 2017 23:57:23 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590679e3fde3_7372c7d0e42901b@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  Rendered signup_mailer/test_mail.html.erb (2.5ms)
+
+ActionMailer::Base#mail: processed outbound mail in 286.0ms
+
+Sent mail to stevendaryl3016@yahoo.com (568.7ms)
+Date: Sun, 30 Apr 2017 23:58:12 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59067a14237d0_737b12cd0e8994f4@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  Rendered signup_mailer/test_mail.html.erb (2.4ms)
+
+ActionMailer::Base#mail: processed outbound mail in 231.0ms
+
+Sent mail to stevendaryl3016@yahoo.com (573.1ms)
+Date: Sun, 30 Apr 2017 23:58:23 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59067a1f16824_73897b10ec8682e@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 23:58:27 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 333ms (Views: 301.8ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 10]]
+  [1m[35m (11.4ms)[0m  commit transaction
+  Rendered signup_mailer/test_mail.html.erb (1.5ms)
+
+ActionMailer::Base#mail: processed outbound mail in 204.6ms
+
+Sent mail to stevendaryl3016@yahoo.com (569.8ms)
+Date: Sun, 30 Apr 2017 23:58:54 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59067a3ecfa67_73a06bb0e8663f7@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 23:58:57 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 227ms (Views: 218.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-04-30 23:59:01 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.2ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (328.2ms)
+Completed 200 OK in 356ms (Views: 343.0ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-04-30 23:59:13 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gHyvFvemrVL8wfU1WjptlnLnfm+7rCKgyLqePGtWkrESLKoejcbG3KfSlUjOZ4QJhNkrsBsdQeh7g57vP2EdkQ==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$UICAqqY.RUR6fufC3aIZE.rUni7rVRCqsJD6zmGeC2tp4DRK8k8Xy"], ["created_at", "2017-04-30 23:59:13.809334"], ["updated_at", "2017-04-30 23:59:13.809334"], ["confirmation_token", "2Kaa1goB6MqGfmGecz5B"], ["confirmation_sent_at", "2017-04-30 23:59:13.809655"]]
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (3.8ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 13.2ms
+
+Sent mail to stevendaryl3016@yahoo.com (564.9ms)
+Date: Sun, 30 Apr 2017 23:59:13 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59067a51cfc93_73a027a8008664c5@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://bloc-foundation-darylmcc.c9users.io/users/confirmation?confirmation_token=2Kaa1goB6MqGfmGecz5B">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 770ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-04-30 23:59:14 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 13ms (Views: 12.9ms | ActiveRecord: 0.0ms)
+  Rendered signup_mailer/test_mail.html.erb (1.5ms)
+
+ActionMailer::Base#mail: processed outbound mail in 247.1ms
+
+Sent mail to stevendaryl3016@yahoo.com (576.2ms)
+Date: Mon, 01 May 2017 00:02:22 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59067b0e6eb50_73b24a30e45471d@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  Rendered signup_mailer/test_mail.html.erb (1.5ms)
+
+ActionMailer::Base#mail: processed outbound mail in 217.1ms
+
+Sent mail to stevendaryl3016@yahoo.com (573.6ms)
+Date: Mon, 01 May 2017 00:02:30 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59067b1618bb_73c012390dc15532@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 11]]
+  [1m[35m (9.5ms)[0m  commit transaction
+  Rendered signup_mailer/test_mail.html.erb (1.5ms)
+
+ActionMailer::Base#mail: processed outbound mail in 211.6ms
+
+Sent mail to stevendaryl3016@yahoo.com (573.2ms)
+Date: Mon, 01 May 2017 00:30:24 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590681a01bcc5_73fa128f0f4409da@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 00:30:30 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 249ms (Views: 239.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-05-01 00:30:33 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (497.9ms)
+Completed 200 OK in 533ms (Views: 516.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-05-01 00:30:48 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FCUQX6tXXe+z5rWUo4ByjnT6SUq3nn4i8VRQ5wbNNwCGdRVX0Tc2Yej11ek33ZsRgsQclRcvHWpCbVA0Uvq4IA==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$x.v8ok/Thh41sCt/7pf.8OEGIgToumRxcQVJ6Ke7wp67zKriUbRBG"], ["created_at", "2017-05-01 00:30:48.807084"], ["updated_at", "2017-05-01 00:30:48.807084"], ["confirmation_token", "SqCyUPb3U9ty4QLr-C42"], ["confirmation_sent_at", "2017-05-01 00:30:48.807473"]]
+  [1m[36m (10.6ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (3.9ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 14.6ms
+
+Sent mail to stevendaryl3016@yahoo.com (564.2ms)
+Date: Mon, 01 May 2017 00:30:48 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590681b8d0428_73fa3fa04bbe4c6041078@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://blocipedia-darylmcc.c9users.io//users/confirmation?confirmation_token=SqCyUPb3U9ty4QLr-C42">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 782ms (ActiveRecord: 11.3ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 00:30:49 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms)
+  Rendered signup_mailer/test_mail.html.erb (1.5ms)
+
+ActionMailer::Base#mail: processed outbound mail in 194.3ms
+
+Sent mail to stevendaryl3016@yahoo.com (569.7ms)
+Date: Mon, 01 May 2017 00:44:17 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590684e18570c_74a8bd30f817e4@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (1.6ms)
+
+ActionMailer::Base#mail: processed outbound mail in 252.4ms
+
+Sent mail to stevendaryl3016@yahoo.com (541.9ms)
+Date: Mon, 01 May 2017 00:45:58 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59068546d2d80_7506107b0ec233fe@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+  [1m[36mUser Load (1.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 12]]
+  [1m[35m (12.4ms)[0m  commit transaction
+  Rendered signup_mailer/test_mail.html.erb within layouts/mailer (1.5ms)
+
+ActionMailer::Base#mail: processed outbound mail in 221.9ms
+
+Sent mail to stevendaryl3016@yahoo.com (535.4ms)
+Date: Mon, 01 May 2017 00:46:39 +0000
+From: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906856fc3714_7528e430e02077c@darylmcc-blocipedia-4795177.mail>
+Subject: Yet Another Test
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <!DOCTYPE html>
+ <html>
+   <head>
+     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
+   </head>
+   <body>
+     <h1>New Message</h1>
+     <small>
+       By: George
+     </small>
+     <p>
+       Blah blah blah blah blah blah
+     </p>
+   </body>
+ </html>
+  </body>
+</html>
+
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 00:46:42 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 338ms (Views: 322.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-05-01 00:46:46 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (435.3ms)
+Completed 200 OK in 479ms (Views: 457.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-05-01 00:46:55 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v3nEZx4zAzb0/rLHEcdX225ixIYcMw/15kp25tKgBogtKcFvZFNouK/t0rqFmr5EmFyRWbyCbL1Vc3Y1hpeJqA==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$kDQyzm7nRIV5EQnsRLDT8OHCR8HXZnXFSGeAoSNE5e58LQb5oKngq"], ["created_at", "2017-05-01 00:46:55.918367"], ["updated_at", "2017-05-01 00:46:55.918367"], ["confirmation_token", "zS2beRsnSxfvYAf2yz6V"], ["confirmation_sent_at", "2017-05-01 00:46:55.918682"]]
+  [1m[36m (10.1ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb within layouts/mailer (3.8ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 12.0ms
+
+Sent mail to stevendaryl3016@yahoo.com (557.9ms)
+Date: Mon, 01 May 2017 00:46:55 +0000
+From: from@example.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906857fea103_75283ff06bbed39020877@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://blocipedia-darylmcc.c9users.io//users/confirmation?confirmation_token=zS2beRsnSxfvYAf2yz6V">Confirm my account</a></p>
+
+  </body>
+</html>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 764ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 00:46:56 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=zS2beRsnSxfvYAf2yz6V" for 108.12.54.194 at 2017-05-01 00:47:37 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"zS2beRsnSxfvYAf2yz6V"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["confirmation_token", "zS2beRsnSxfvYAf2yz6V"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["confirmed_at", "2017-05-01 00:47:37.184526"], ["updated_at", "2017-05-01 00:47:37.184981"], ["id", 13]]
+  [1m[36m (10.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocipedia-darylmcc.c9users.io/users/sign_in
+Completed 302 Found in 23ms (ActiveRecord: 10.6ms)
+
+
+Started GET "/users/sign_in" for 108.12.54.194 at 2017-05-01 00:47:37 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 13]]
+  [1m[35m (9.7ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 00:49:51 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 213ms (Views: 202.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-05-01 00:49:53 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (452.5ms)
+Completed 200 OK in 478ms (Views: 467.6ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-05-01 00:50:04 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZHpfA82KKPpIRExQcWsrZIVC+Gw5CnY05PXBRn6wwSj2KloLt+pDdBNXLC3lNsL7c3yts5m7FXxXzMGVKodOCA==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$pgjx3BZWiJY4phTXYUxI8./RJ330LCJl3kNo2H.og9G5tSzVsCTx6"], ["created_at", "2017-05-01 00:50:04.612933"], ["updated_at", "2017-05-01 00:50:04.612933"], ["confirmation_token", "FnMZi8vNhDP-eQgiY3Tf"], ["confirmation_sent_at", "2017-05-01 00:50:04.613317"]]
+  [1m[36m (12.6ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb within layouts/mailer (3.8ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 151.0ms
+
+Sent mail to stevendaryl3016@yahoo.com (573.9ms)
+Date: Mon, 01 May 2017 00:50:04 +0000
+From: from@example.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906863cc2257_75563fcff4fe9c4c3394a@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://blocipedia-darylmcc.c9users.io//users/confirmation?confirmation_token=FnMZi8vNhDP-eQgiY3Tf">Confirm my account</a></p>
+
+  </body>
+</html>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 921ms (ActiveRecord: 13.3ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 00:50:05 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 14]]
+  [1m[35m (9.8ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 00:55:20 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 230ms (Views: 219.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-05-01 00:55:25 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (452.4ms)
+Completed 200 OK in 479ms (Views: 467.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-05-01 00:55:34 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"etVWY+XUvjZj2FGg0OBDQSqFDhbAOI95x5FCIA4hmVrohVNrn7TVuDjLMd1Evare3LtbyWCJ7DF0qELzWhYWeg==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$ewN51ti5t5Cg4PLyc4.npeK2Qd4V0z2OimBoLaM3cOrRLeR9QL./C"], ["created_at", "2017-05-01 00:55:35.058011"], ["updated_at", "2017-05-01 00:55:35.058011"], ["confirmation_token", "TfFGrWAt1sy1zTcVDx6s"], ["confirmation_sent_at", "2017-05-01 00:55:35.058389"]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb within layouts/mailer (3.6ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 125.5ms
+
+Sent mail to stevendaryl3016@yahoo.com (575.2ms)
+Date: Mon, 01 May 2017 00:55:35 +0000
+From: from@example.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <5906878733b09_75823feac5038500490eb@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://blocipedia-darylmcc.c9users.io//users/confirmation?confirmation_token=TfFGrWAt1sy1zTcVDx6s">Confirm my account</a></p>
+
+  </body>
+</html>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 890ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 00:55:35 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.2ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (2.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 15]]
+  [1m[35m (10.0ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 01:04:29 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 328ms (Views: 312.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-05-01 01:04:31 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (861.4ms)
+Completed 200 OK in 898ms (Views: 881.5ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-05-01 01:04:42 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7eGUk/mrZVkqSg8vDa7Pex/YUvdlQoAs11AVxiSlgO1/sZGbg8sO13FZb1KZ8ybk6eYHKMXz42RkaRUVcJIPzQ==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$VRUt7aBleMXltHs6SHGohOCk4rqT8GJLu99BbpqM28lkjZI1gFx0u"], ["created_at", "2017-05-01 01:04:43.017465"], ["updated_at", "2017-05-01 01:04:43.017465"], ["confirmation_token", "QXnGjhv8pLxR2dd3Jnp6"], ["confirmation_sent_at", "2017-05-01 01:04:43.017996"]]
+  [1m[36m (11.0ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb within layouts/mailer (4.1ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 153.7ms
+
+Sent mail to stevendaryl3016@yahoo.com (567.1ms)
+Date: Mon, 01 May 2017 01:04:43 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590689ab3168d_75b13faa0afedbb89989f@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<html>
+  <body>
+    <p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://blocipedia-darylmcc.c9users.io//users/confirmation?confirmation_token=QXnGjhv8pLxR2dd3Jnp6">Confirm my account</a></p>
+
+  </body>
+</html>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 922ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 01:04:44 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 14ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (3.6ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 16]]
+  [1m[35m (10.3ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 01:07:52 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 248ms (Views: 237.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-05-01 01:07:55 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (8.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (482.9ms)
+Completed 200 OK in 510ms (Views: 498.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-05-01 01:08:04 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NEp+X3Kt0ucJfFJHr87XrDik8MzBFV0ybrxLlM5AiDKmGntXCM25aVJvMjo7kz4zzpqlE2GkPnrdhUtHmncHEg==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$yFkquAdUoJDcwLFuVppwnuA28E263xtMfI9hFNqSk6pASKqVZorrq"], ["created_at", "2017-05-01 01:08:04.664799"], ["updated_at", "2017-05-01 01:08:04.664799"], ["confirmation_token", "BFg-oC-yhDG4BvTpzJqY"], ["confirmation_sent_at", "2017-05-01 01:08:04.665215"]]
+  [1m[36m (8.9ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (3.5ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 150.2ms
+
+Sent mail to stevendaryl3016@yahoo.com (571.7ms)
+Date: Mon, 01 May 2017 01:08:04 +0000
+From: from@example.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59068a74cd7c9_75df3fd040fcc40c658a3@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://blocipedia-darylmcc.c9users.io//users/confirmation?confirmation_token=BFg-oC-yhDG4BvTpzJqY">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 914ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 01:08:05 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 14ms (Views: 13.5ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (2.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 17]]
+  [1m[35m (9.7ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 01:27:47 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 298ms (Views: 282.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-05-01 01:27:50 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.3ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (828.1ms)
+Completed 200 OK in 861ms (Views: 845.5ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-05-01 01:28:16 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EypHDHW3nf1ddRk2TmpjFqtlVwd4rKvfYn+wwV0/Za6ypK0buWkj12cEwbXWqmehFGmZlePiYucbzEkmbMxxyA==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$kKW2/jv0xfX7bQT2M7/FJuw5ughIewniGt1hpQPUp5Xeq52Xh1GT."], ["created_at", "2017-05-01 01:28:16.393637"], ["updated_at", "2017-05-01 01:28:16.393637"], ["confirmation_token", "tyisxmhqXwZM9NgsAsjv"], ["confirmation_sent_at", "2017-05-01 01:28:16.394097"]]
+  [1m[36m (11.4ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (5.8ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 208.6ms
+
+Sent mail to stevendaryl3016@yahoo.com (588.4ms)
+Date: Mon, 01 May 2017 01:28:16 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59068f309cbea_7a343fb5aafc519453975@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://blocipedia-darylmcc.c9users.io//users/confirmation?confirmation_token=tyisxmhqXwZM9NgsAsjv">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 1015ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 01:28:17 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 18]]
+  [1m[35m (10.3ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 01:31:25 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 302ms (Views: 286.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-05-01 01:31:28 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.6ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (630.1ms)
+Completed 200 OK in 664ms (Views: 650.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-05-01 01:31:43 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qi6T9zWfMiUjqxv5D9FilG872X4TvU9WXFf2g+2IEKoLoHng+UGMDxnaw3qXEWYj0DcX7Ijzhm4l5A9k3HsEzA==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$7y9dg2bmaTTZMhYGDwcRBOmeGl0Z7ScGlw6YNwV0bQklUsyGvT3O."], ["created_at", "2017-05-01 01:31:43.329302"], ["updated_at", "2017-05-01 01:31:43.329302"], ["confirmation_token", "Zss7QmY8se7DUCZp-sxJ"], ["confirmation_sent_at", "2017-05-01 01:31:43.329737"]]
+  [1m[36m (10.4ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (5.6ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 163.1ms
+
+Sent mail to stevendaryl3016@yahoo.com (570.3ms)
+Date: Mon, 01 May 2017 01:31:43 +0000
+From: stevendaryl3016@gmail.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59068fff807fe_7a5f3fe704fec15052225@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://blocipedia-darylmcc.c9users.io//users/confirmation?confirmation_token=Zss7QmY8se7DUCZp-sxJ">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 960ms (ActiveRecord: 11.2ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 01:31:44 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (2.6ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 19]]
+  [1m[35m (47.5ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 01:33:29 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 285ms (Views: 272.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-05-01 01:33:31 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (11.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (602.7ms)
+Completed 200 OK in 638ms (Views: 625.8ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-05-01 01:33:42 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ONIlOYqUQ7VrQp5pNteu6LZhj1Zy3RZK4MPwAomCMaOZXM8uRkr9n1EzRuquF6pfCW1BxOmT33KZcAnluHElxQ==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$fUnU9rQoNVGe7uc3/W8RX.iwqacRe/uGoFBzbWoFnI35pFJ8PeHP6"], ["created_at", "2017-05-01 01:33:42.347984"], ["updated_at", "2017-05-01 01:33:42.347984"], ["confirmation_token", "RngF_PmxqeWXuTWHd-2P"], ["confirmation_sent_at", "2017-05-01 01:33:42.348474"]]
+  [1m[36m (15.4ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (5.8ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 192.8ms
+
+Sent mail to stevendaryl3016@yahoo.com (581.5ms)
+Date: Mon, 01 May 2017 01:33:42 +0000
+From: stevendaryl3016@example.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <590690768e350_7a8b3ff36b745d444686c@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://blocipedia-darylmcc.c9users.io//users/confirmation?confirmation_token=RngF_PmxqeWXuTWHd-2P">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 1058ms (ActiveRecord: 16.3ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 01:33:43 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (4.0ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 20]]
+  [1m[35m (19.3ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 01:36:19 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 315ms (Views: 298.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-05-01 01:36:22 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (11.4ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (779.2ms)
+Completed 200 OK in 817ms (Views: 801.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-05-01 01:36:41 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nWZRkND97tArGJ4zBHkorFPZMV2F8EV0TIbRdxew43w86LuHHCNQ+hFpRrCcuSwb7NX/zx6+jEw1NSiQJkP3Gg==", "user"=>{"email"=>"stevendaryl3016@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@gmail.com"], ["encrypted_password", "$2a$11$J54145GNMrFElR/eCy5aceVyIPyfvo7/pfrPp1iTKRc00JReIkToG"], ["created_at", "2017-05-01 01:36:42.192628"], ["updated_at", "2017-05-01 01:36:42.192628"], ["confirmation_token", "FiQXHgvdQipE1GK_GAcS"], ["confirmation_sent_at", "2017-05-01 01:36:42.192987"]]
+  [1m[36m (45.1ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (5.2ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 166.3ms
+
+Sent mail to stevendaryl3016@gmail.com (580.3ms)
+Date: Mon, 01 May 2017 01:36:42 +0000
+From: stevendaryl3016@yahoo.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@gmail.com
+Message-ID: <5906912a67d6c_7aba3faedb74cb009468@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://blocipedia-darylmcc.c9users.io//users/confirmation?confirmation_token=FiQXHgvdQipE1GK_GAcS">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 1101ms (ActiveRecord: 45.9ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 01:36:43 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 17.8ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (2.9ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 21]]
+  [1m[35m (9.8ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 01:40:18 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 351ms (Views: 261.5ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 01:48:50 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 298ms (Views: 285.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-05-01 01:48:53 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (9.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (666.5ms)
+Completed 200 OK in 700ms (Views: 688.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-05-01 01:49:08 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f4rd0D/D4W4Iz1E0RUrGr/POupqoHwGvsWJBNvJupYHeBDfH8x1fRDK+ibfdisIYTMJ0CDNRyJfI0bjRw52x5w==", "user"=>{"email"=>"stevendaryl30161@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl30161@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl30161@gmail.com"], ["encrypted_password", "$2a$11$BFcRDk4hYxc4JJytWLPhw.QlGi84MJnzcZgzMdxKy0w2nAvdQ5b8S"], ["created_at", "2017-05-01 01:49:08.350562"], ["updated_at", "2017-05-01 01:49:08.350562"], ["confirmation_token", "y_dosz-GbaDVdCYRtykR"], ["confirmation_sent_at", "2017-05-01 01:49:08.351487"]]
+  [1m[36m (13.0ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (7.0ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 197.7ms
+
+Sent mail to stevendaryl30161@gmail.com (574.9ms)
+Date: Mon, 01 May 2017 01:49:08 +0000
+From: stevendaryl3016@example.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl30161@gmail.com
+Message-ID: <590694148f8b0_7b023ff86374ee8875392@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl30161@gmail.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://blocipedia-darylmcc.c9users.io//users/confirmation?confirmation_token=y_dosz-GbaDVdCYRtykR">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 1024ms (ActiveRecord: 13.9ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 01:49:09 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 15:21:34 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 269ms (Views: 253.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 15:26:44 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 2859ms (Views: 2842.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-a2b1190e1b33a2afdbe6cbe7eb93da2fb82736324d1884706476b14db1ab0d8e.css?body=1" for 108.12.54.194 at 2017-05-01 15:26:47 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 15:27:22 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 2609ms (Views: 2593.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-b3d7175a977fd35eb22247b9342e666c293b9852ddc438eefdf9381fdd81d966.css?body=1" for 108.12.54.194 at 2017-05-01 15:27:25 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 15:36:39 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 2792ms (Views: 2782.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/welcome.self-0de2d689dc29435fb4c628bfb202a4d73416335abdb70a48319d1cdcb22a4a99.css?body=1" for 108.12.54.194 at 2017-05-01 15:36:42 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 108.12.54.194 at 2017-05-01 15:36:48 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.9ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (490.2ms)
+Completed 200 OK in 523ms (Views: 509.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/users/sign_in" for 108.12.54.194 at 2017-05-01 15:37:13 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-05-01 15:37:15 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.1ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (12.0ms)
+Completed 200 OK in 32ms (Views: 30.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 108.12.54.194 at 2017-05-01 15:37:16 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.2ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 33ms (Views: 32.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 108.12.54.194 at 2017-05-01 15:37:26 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ta0adyoen+nSXdeNIzA8J5HDrs9HZdoh7L60rXfpZCJz+qd4dO8UBpPMMv4a2R92sTLPjKa0mWlfww9jLL7/hA==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "stevendaryl3016@yahoo.com"]]
+Completed 401 Unauthorized in 16ms (ActiveRecord: 0.4ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ta0adyoen+nSXdeNIzA8J5HDrs9HZdoh7L60rXfpZCJz+qd4dO8UBpPMMv4a2R92sTLPjKa0mWlfww9jLL7/hA==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered devise/shared/_links.html.erb (6.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 214ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+  [1m[36mUser Load (3.5ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (33.5ms)[0m  [1mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 22]]
+  [1m[35m (10.7ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 15:42:02 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 335ms (Views: 324.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for 108.12.54.194 at 2017-05-01 15:42:18 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.5ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (463.9ms)
+Completed 200 OK in 491ms (Views: 479.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for 108.12.54.194 at 2017-05-01 15:42:31 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Rxe8YPjUuhav2pUuMwQHxyf9hMgGyxbuQLqRYEFImZ55QAFvpiUx+e5LcF0K7SSWBwzli+caVabzxyquGh8COA==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$vS8rQJ7dd3h1/sZIgxb6pOvpmype0i8KNKhc8VzDhtDopO8NCcV0S"], ["created_at", "2017-05-01 15:42:31.598947"], ["updated_at", "2017-05-01 15:42:31.598947"], ["confirmation_token", "nA8Ks-ZtnK7TeJkajSx-"], ["confirmation_sent_at", "2017-05-01 15:42:31.599377"]]
+  [1m[36m (12.3ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (6.0ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 152.0ms
+
+Sent mail to stevendaryl3016@yahoo.com (571.3ms)
+Date: Mon, 01 May 2017 15:42:31 +0000
+From: stevendaryl3016@example.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <59075767bff09_bb33fe426fd03dc1123a@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://blocipedia-darylmcc.c9users.io//users/confirmation?confirmation_token=nA8Ks-ZtnK7TeJkajSx-">Confirm my account</a></p>
+
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 1004ms (ActiveRecord: 13.2ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 15:42:32 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/confirmation?confirmation_token=nA8Ks-ZtnK7TeJkajSx-" for 108.12.54.194 at 2017-05-01 15:43:54 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::ConfirmationsController#show as HTML
+  Parameters: {"confirmation_token"=>"nA8Ks-ZtnK7TeJkajSx-"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."confirmation_token" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["confirmation_token", "nA8Ks-ZtnK7TeJkajSx-"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["confirmed_at", "2017-05-01 15:43:54.552482"], ["updated_at", "2017-05-01 15:43:54.553196"], ["id", 23]]
+  [1m[36m (10.7ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocipedia-darylmcc.c9users.io/users/sign_in
+Completed 302 Found in 28ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/users/sign_in" for 108.12.54.194 at 2017-05-01 15:43:54 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (13.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (25.5ms)
+Completed 200 OK in 46ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 108.12.54.194 at 2017-05-01 15:44:17 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AVaRqLqamgkSQaO/XNiht+YfzUBWYGJFan3VkcMFElg/ASyn5GsR5lPQRsxlMYLmxu6sA7exIQ3ZAG5fmFKJ/g==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "stevendaryl3016@yahoo.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-05-01 15:44:17.649528"], ["current_sign_in_at", "2017-05-01 15:44:17.649528"], ["last_sign_in_ip", "108.12.54.194"], ["current_sign_in_ip", "108.12.54.194"], ["sign_in_count", 1], ["updated_at", "2017-05-01 15:44:17.650422"], ["id", 23]]
+  [1m[36m (10.9ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 156ms (ActiveRecord: 11.6ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 15:44:17 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WelcomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 23]]
+  Rendered welcome/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 14ms (Views: 13.3ms | ActiveRecord: 0.3ms)

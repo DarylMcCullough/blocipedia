@@ -1,2 +1,8 @@
-<h1>Welcome#index</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<h1>Welcome to <span class="app-title">Blocipedia</span></h1>
+
+<% if user_signed_in? %>
+   Explore the pages. Create your own.
+   <% else %>
+   <div class="signup-instructions">Signup or login to create your own wiki or read what others have created...</div>
+ <% end %>
+
