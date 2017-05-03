@@ -6841,3 +6841,122 @@ ActiveRecord::RecordNotFound (Couldn't find Wiki with 'id'=index):
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
   Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.0ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 23:24:15 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.3ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (1.9ms)
+  Rendered wikis/index.html.erb within layouts/application (30.9ms)
+Completed 200 OK in 362ms (Views: 342.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/welcome.self-0de2d689dc29435fb4c628bfb202a4d73416335abdb70a48319d1cdcb22a4a99.css?body=1" for 108.12.54.194 at 2017-05-01 23:24:16 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 108.12.54.194 at 2017-05-01 23:24:16 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/wikis.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 108.12.54.194 at 2017-05-01 23:24:16 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3d2b1085db6945c1ed2965f6b9561bfd4c3d4bfd17596a955c1ce8b4068f6b3f.css?body=1" for 108.12.54.194 at 2017-05-01 23:24:16 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 108.12.54.194 at 2017-05-01 23:24:16 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 108.12.54.194 at 2017-05-01 23:24:16 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 108.12.54.194 at 2017-05-01 23:24:16 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 108.12.54.194 at 2017-05-01 23:24:16 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 108.12.54.194 at 2017-05-01 23:24:16 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/wikis/2" for 108.12.54.194 at 2017-05-01 23:24:26 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 24]]
+  Rendered wikis/show.html.erb within layouts/application (520.6ms)
+Completed 200 OK in 556ms (Views: 542.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/wikis/index" for 108.12.54.194 at 2017-05-01 23:24:58 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[36mWiki Load (0.1ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Wiki with 'id'=index):
+  app/controllers/wikis_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (25.0ms)
+
+
+Started GET "/wikis/index" for 108.12.54.194 at 2017-05-01 23:25:53 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"index"}
+  [1m[35mWiki Load (0.1ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 0]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+ActiveRecord::RecordNotFound (Couldn't find Wiki with 'id'=index):
+  app/controllers/wikis_controller.rb:7:in `show'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (24.8ms)
+
+
+Started GET "/" for 108.12.54.194 at 2017-05-01 23:32:17 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.2ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (1.7ms)
+  Rendered wikis/index.html.erb within layouts/application (25.0ms)
+Completed 200 OK in 279ms (Views: 260.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/wikis/2" for 108.12.54.194 at 2017-05-01 23:32:21 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 24]]
+  Rendered wikis/show.html.erb within layouts/application (630.0ms)
+Completed 200 OK in 666ms (Views: 655.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/wikis" for 108.12.54.194 at 2017-05-01 23:32:25 +0000
+Cannot render console from 108.12.54.194! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (0.4ms)
+  Rendered wikis/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.3ms)

@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    <%= link_to "Blocipedia Home", wikis_index_path, :class => 'navbar-link'  %> -
+    <%= link_to "Blocipedia Home", wikis_path, :class => 'navbar-link'  %> -
   
  <% if user_signed_in? %>
    Signed in as: <strong><%= current_user.email %></strong> |
