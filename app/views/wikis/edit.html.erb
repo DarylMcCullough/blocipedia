@@ -1,2 +1,15 @@
-<h1>Wikis#edit</h1>
-<p>Find me in app/views/wikis/edit.html.erb</p>
+ <h1>New Wiki</h1>
+ 
+ <div class="row">
+   <div class="col-md-4">
+     <p>Guidelines for wikis:</p>
+     <ul>
+       <li>Make sure the wiki is appropriate.</li>
+       <li>No fake news.</li>
+       <li>Use correct spelling and grammar.</li>
+     </ul>
+   </div>
+   <div class="col-md-8">
+          <%= render partial: 'form', locals: { wiki: @wiki } %>
+   </div>
+ </div>
