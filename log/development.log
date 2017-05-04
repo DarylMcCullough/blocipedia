@@ -6960,3 +6960,94 @@ Processing by WikisController#index as HTML
   Rendered wikis/_wiki.html.erb (0.4ms)
   Rendered wikis/index.html.erb within layouts/application (2.6ms)
 Completed 200 OK in 41ms (Views: 40.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 108.12.48.218 at 2017-05-03 23:23:29 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.7ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (1.8ms)
+  Rendered wikis/index.html.erb within layouts/application (32.9ms)
+Completed 200 OK in 2549ms (Views: 2518.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/welcome.self-0de2d689dc29435fb4c628bfb202a4d73416335abdb70a48319d1cdcb22a4a99.css?body=1" for 108.12.48.218 at 2017-05-03 23:23:32 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/wikis.self-cd41dec80fd3ae8165ce88df5cede8f793ea516462cf3f2da292085df71dd7da.css?body=1" for 108.12.48.218 at 2017-05-03 23:23:32 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 108.12.48.218 at 2017-05-03 23:23:32 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 108.12.48.218 at 2017-05-03 23:23:32 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3d2b1085db6945c1ed2965f6b9561bfd4c3d4bfd17596a955c1ce8b4068f6b3f.css?body=1" for 108.12.48.218 at 2017-05-03 23:23:32 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 108.12.48.218 at 2017-05-03 23:23:32 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 108.12.48.218 at 2017-05-03 23:23:32 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 108.12.48.218 at 2017-05-03 23:23:32 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 108.12.48.218 at 2017-05-03 23:23:32 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/wikis" for 108.12.48.218 at 2017-05-03 23:23:47 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (0.3ms)
+  Rendered wikis/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 32ms (Views: 30.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 108.12.48.218 at 2017-05-03 23:23:52 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (13.3ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (577.3ms)
+Completed 200 OK in 631ms (Views: 611.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wikis" for 108.12.48.218 at 2017-05-03 23:23:55 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.2ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (0.3ms)
+  Rendered wikis/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 29ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wikis/2" for 108.12.48.218 at 2017-05-03 23:23:58 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 24]]
+  Rendered wikis/show.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 75ms (Views: 51.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/wikis" for 108.12.48.218 at 2017-05-03 23:24:05 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (0.3ms)
+  Rendered wikis/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.2ms)
