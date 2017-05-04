@@ -12,11 +12,12 @@ class WikisController < ApplicationController
   end
   
   def create
-     @wiki = Wiki.new(wiki_params)
-     @wiki.user = current_user
 
-
-     if @wiki.save
+    @wiki = Wiki.new(wiki_params)
+    
+    @wiki.user = current_user
+    
+     if @wiki.save!
        redirect_to @wiki, notice: "Wiki was saved successfully."
      else
        flash.now[:alert] = "Error creating wiki. Please try again."
