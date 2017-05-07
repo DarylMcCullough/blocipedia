@@ -7321,3 +7321,87 @@ Processing by WikisController#show as HTML
   [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 24]]
   Rendered wikis/show.html.erb within layouts/application (1.5ms)
 Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.3ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddRoleToUsers (20170504223348)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.3ms)[0m  [1mALTER TABLE "users" ADD "role" integer[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20170504223348"]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_wikis_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_wikis_on_user_id' AND type='index'
+[0m
+
+
+Started GET "/" for 108.12.48.218 at 2017-05-04 22:50:23 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.2ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (1.2ms)
+  Rendered wikis/index.html.erb within layouts/application (38.7ms)
+Completed 200 OK in 444ms (Views: 415.8ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/wikis/3" for 108.12.48.218 at 2017-05-04 22:50:29 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 24]]
+  Rendered wikis/show.html.erb within layouts/application (612.2ms)
+Completed 200 OK in 651ms (Views: 638.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/wikis/3/edit" for 108.12.48.218 at 2017-05-04 22:50:35 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered wikis/_form.html.erb (25.3ms)
+  Rendered wikis/edit.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 60ms (Views: 58.6ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/wikis/3" for 108.12.48.218 at 2017-05-04 22:51:31 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vS69T+O8hCODi4NNUA8+3hxEcJfJnd7pNua7J6YdAwLOXZg1+i084A2t8AeYANO+si/uKOHYKkrqls8yeIONCQ==", "wiki"=>{"title"=>"Second Wiki", "body"=>"Blah blah blah blah blah blah blah\r\n\r\nand more blahs.\r\n\r\nand yet more blahs.", "private"=>"0"}, "commit"=>"Save", "id"=>"3"}
+  [1m[35mWiki Load (0.1ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 24]]
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "wikis" SET "body" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["body", "Blah blah blah blah blah blah blah\r\n\r\nand more blahs.\r\n\r\nand yet more blahs."], ["updated_at", "2017-05-04 22:51:31.338377"], ["id", 3]]
+  [1m[35m (13.2ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis/3
+Completed 302 Found in 20ms (ActiveRecord: 13.8ms)
+
+
+Started GET "/wikis/3" for 108.12.48.218 at 2017-05-04 22:51:31 +0000
+Cannot render console from 108.12.48.218! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 24]]
+  Rendered wikis/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.3ms)

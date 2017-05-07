@@ -7,7 +7,8 @@ RSpec.describe WikisController, type: :controller do
     
     context "member user doing CRUD on a wiki" do
     before do
-       puts "inside do"
+       my_user.confirm
+        sign_in my_user
     end
 
   describe "GET #index" do
@@ -52,13 +53,12 @@ RSpec.describe WikisController, type: :controller do
     
     describe "POST create" do
       it "increases the number of Wikis by 1" do
-        my_user.confirm
-        sign_in my_user
+       
         expect{ post :create, wiki: {title: RandomData.random_sentence, body: RandomData.random_paragraph} }.to change(Wiki,:count).by(1)
       end
 
       it "assigns the new wiki to @wiki" do
-        post :create, post: {title: RandomData.random_sentence, body: RandomData.random_paragraph}
+        post :create, wiki: {title: RandomData.random_sentence, body: RandomData.random_paragraph}
         expect(assigns(:wiki)).to eq Wiki.last
       end
 
@@ -67,6 +67,6 @@ RSpec.describe WikisController, type: :controller do
         expect(response).to redirect_to Wiki.last
       end
     end
-end
+  end
 
 end
