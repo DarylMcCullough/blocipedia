@@ -7405,3 +7405,377 @@ Processing by WikisController#show as HTML
   [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 24]]
   Rendered wikis/show.html.erb within layouts/application (2.2ms)
 Completed 200 OK in 38ms (Views: 36.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 108.12.48.204 at 2017-05-07 20:42:17 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.2ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (0.9ms)
+  Rendered wikis/index.html.erb within layouts/application (34.8ms)
+Completed 200 OK in 285ms (Views: 265.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/wikis/3" for 108.12.48.204 at 2017-05-07 20:42:22 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 24]]
+  Rendered wikis/show.html.erb within layouts/application (507.6ms)
+Completed 200 OK in 543ms (Views: 532.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/wikis/3/edit" for 108.12.48.204 at 2017-05-07 20:42:31 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.1ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered wikis/_form.html.erb (20.2ms)
+  Rendered wikis/edit.html.erb within layouts/application (21.5ms)
+Completed 200 OK in 53ms (Views: 52.2ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/wikis/3" for 108.12.48.204 at 2017-05-07 20:42:44 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EkXh/uejECeJQc2+EzMCUW3GiAxp8uVeAbDfG7Y2IEuT3kLNiNnOoxKxHbge2bGpN3YDI+dMXeCvfP9l8emxzQ==", "wiki"=>{"title"=>"Second Wiki", "body"=>"Blah blah blah blah blah blah blah\r\n\r\nand more blahs.\r\n\r\nand yet more blahs.\r\n\r\nDoes this work?", "private"=>"0"}, "commit"=>"Save", "id"=>"3"}
+  [1m[35mWiki Load (0.1ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 3]]
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.1ms)
+
+Pundit::NotAuthorizedError (not allowed to update? this #<Wiki id: 3, title: "Second Wiki", body: "Blah blah blah blah blah blah blah\r\n\r\nand more bla...", private: false, user_id: 24, created_at: "2017-05-04 00:39:29", updated_at: "2017-05-04 22:51:31">):
+  app/controllers/wikis_controller.rb:34:in `update'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (26.8ms)
+
+
+Started GET "/" for 108.12.48.204 at 2017-05-07 20:45:48 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.2ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (1.0ms)
+  Rendered wikis/index.html.erb within layouts/application (33.6ms)
+Completed 200 OK in 254ms (Views: 236.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/wikis/3" for 108.12.48.204 at 2017-05-07 20:45:54 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 24]]
+  Rendered wikis/show.html.erb within layouts/application (440.4ms)
+Completed 200 OK in 474ms (Views: 463.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/wikis/3/edit" for 108.12.48.204 at 2017-05-07 20:45:57 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.1ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered wikis/_form.html.erb (17.9ms)
+  Rendered wikis/edit.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 44ms (Views: 42.7ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/wikis/3" for 108.12.48.204 at 2017-05-07 20:46:14 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fe3UEpfahDu5BiNABbmAy8w4vEhIkdh1jxqLso4j/538dnch+KBavyL280YIUzMzlog3Z8YvYMsh1qvMyfxuGw==", "wiki"=>{"title"=>"Second Wiki", "body"=>"Blah blah blah blah blah blah blah\r\n\r\nand more blahs.\r\n\r\nand yet more blahs.\r\n\r\nThis edit shouldn't work.", "private"=>"0"}, "commit"=>"Save", "id"=>"3"}
+  [1m[35mWiki Load (0.2ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 3]]
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis/3
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 24]]
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "wikis" SET "body" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["body", "Blah blah blah blah blah blah blah\r\n\r\nand more blahs.\r\n\r\nand yet more blahs.\r\n\r\nThis edit shouldn't work."], ["updated_at", "2017-05-07 20:46:14.968846"], ["id", 3]]
+  [1m[35m (7.0ms)[0m  commit transaction
+Redirected to 
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 7.6ms)
+
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  app/controllers/wikis_controller.rb:44:in `update'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (21.5ms)
+
+
+Started GET "/" for 108.12.48.204 at 2017-05-07 20:47:10 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.2ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (0.9ms)
+  Rendered wikis/index.html.erb within layouts/application (35.4ms)
+Completed 200 OK in 313ms (Views: 292.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/wikis/3" for 108.12.48.204 at 2017-05-07 20:47:13 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.4ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 24]]
+  Rendered wikis/show.html.erb within layouts/application (478.1ms)
+Completed 200 OK in 518ms (Views: 504.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/wikis/3/edit" for 108.12.48.204 at 2017-05-07 20:47:17 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.1ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered wikis/_form.html.erb (17.3ms)
+  Rendered wikis/edit.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/wikis/3" for 108.12.48.204 at 2017-05-07 20:47:38 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U/qp5+RwkGspsY4S/INHrIrE9TOLOB+0Vi/tAKQ78GPSYQrUiwpO77JBXhTxafRU0HR+HAWGpwr4481+4+Rh5Q==", "wiki"=>{"title"=>"Second Wiki", "body"=>"Blah blah blah blah blah blah blah\r\n\r\nand more blahs.\r\n\r\nand yet more blahs.\r\n\r\nThis edit shouldn't work.\r\n\r\nIt really shouldn't.", "private"=>"0"}, "commit"=>"Save", "id"=>"3"}
+  [1m[35mWiki Load (0.1ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 3]]
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis/3
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/wikis/3" for 108.12.48.204 at 2017-05-07 20:47:38 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.1ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 24]]
+  Rendered wikis/show.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wikis/3/edit" for 108.12.48.204 at 2017-05-07 20:47:50 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered wikis/_form.html.erb (1.7ms)
+  Rendered wikis/edit.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/wikis/3" for 108.12.48.204 at 2017-05-07 20:48:02 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IIsvtTCHbHPkGp7uG2fMi2AXS1gM57WFBW7vdEj8OgihEIyGX/2y93/qTugWjX9zOqfAd4JZDTuros8KDyOrjg==", "wiki"=>{"title"=>"Second Wiki", "body"=>"Blah blah blah blah blah blah blah\r\n\r\nand more blahs.\r\n\r\nand yet more blahs.\r\n\r\nThis edit shouldn't work.\r\n\r\nthis shouldn't work!", "private"=>"0"}, "commit"=>"Save", "id"=>"3"}
+  [1m[35mWiki Load (0.1ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 3]]
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis/3
+Completed 302 Found in 2ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/wikis/3" for 108.12.48.204 at 2017-05-07 20:48:02 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 24]]
+  Rendered wikis/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 108.12.48.204 at 2017-05-07 20:49:16 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.2ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (1.6ms)
+  Rendered wikis/index.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 312ms (Views: 292.9ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/wikis/3" for 108.12.48.204 at 2017-05-07 20:49:18 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 24]]
+  Rendered wikis/show.html.erb within layouts/application (628.5ms)
+Completed 200 OK in 662ms (Views: 651.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/wikis/3/edit" for 108.12.48.204 at 2017-05-07 20:49:21 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered wikis/_form.html.erb (18.6ms)
+  Rendered wikis/edit.html.erb within layouts/application (20.0ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/wikis/3" for 108.12.48.204 at 2017-05-07 20:49:37 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TZ7dK1qCIFzw1VPA+bL0WoTq9r0wDoC1opBM3Xg/E1/MBX4YNfj+2Gslg8b0WEei3lp9kr6wOAsMXGyjP+CC2Q==", "wiki"=>{"title"=>"Second Wiki", "body"=>"Blah blah blah blah blah blah blah\r\n\r\nand more blahs.\r\n\r\nand yet more blahs.\r\n\r\nThis edit shouldn't work.\r\n\r\nThis edit shouldn't work, really!", "private"=>"0"}, "commit"=>"Save", "id"=>"3"}
+  [1m[35mWiki Load (0.1ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 3]]
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis/3
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/wikis/3" for 108.12.48.204 at 2017-05-07 20:49:37 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 24]]
+  Rendered wikis/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 25.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 108.12.48.204 at 2017-05-07 20:49:52 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (11.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 54ms (Views: 49.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 108.12.48.204 at 2017-05-07 20:50:08 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"87CYUpRntKYnM6gnTJjTWhz4yq6JLoP/NMA8iD3nWhJyKzth+x1qIrzDeCFBcmCiRkhBgQeQO0GaDBz2ejjLlA==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "stevendaryl3016@yahoo.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "role" = ?, "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["role", 0], ["last_sign_in_at", "2017-05-04 00:39:08.734584"], ["current_sign_in_at", "2017-05-07 20:50:08.279762"], ["last_sign_in_ip", "108.12.48.218"], ["current_sign_in_ip", "108.12.48.204"], ["sign_in_count", 3], ["updated_at", "2017-05-07 20:50:08.280967"], ["id", 24]]
+  [1m[35m (10.9ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 176ms (ActiveRecord: 11.8ms)
+
+
+Started GET "/" for 108.12.48.204 at 2017-05-07 20:50:08 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 24]]
+  [1m[35mWiki Load (0.2ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (0.3ms)
+  Rendered wikis/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/wikis/3" for 108.12.48.204 at 2017-05-07 20:50:17 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 24]]
+  Rendered wikis/show.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 24]]
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/wikis/3/edit" for 108.12.48.204 at 2017-05-07 20:50:21 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mWiki Load (0.2ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered wikis/_form.html.erb (1.9ms)
+  Rendered wikis/edit.html.erb within layouts/application (2.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 24]]
+Completed 200 OK in 36ms (Views: 34.7ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/wikis/3" for 108.12.48.204 at 2017-05-07 20:50:29 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NNbaH/huiqNy7MJ9LNcmHe1oXQKpPLx6WW7nnyTb5bywKnFz/yfZoB09X4CrzyOakiaQrQ4xrwJWlXvWxX6I3g==", "wiki"=>{"title"=>"Second Wiki", "body"=>"Blah blah blah blah blah blah blah\r\n\r\nand more blahs.\r\n\r\nand yet more blahs.", "private"=>"0"}, "commit"=>"Save", "id"=>"3"}
+  [1m[35mWiki Load (0.2ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 24]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 24]]
+  [1m[35mSQL (0.4ms)[0m  UPDATE "wikis" SET "body" = ?, "updated_at" = ? WHERE "wikis"."id" = ?  [["body", "Blah blah blah blah blah blah blah\r\n\r\nand more blahs.\r\n\r\nand yet more blahs."], ["updated_at", "2017-05-07 20:50:29.891118"], ["id", 3]]
+  [1m[36m (9.7ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis/3
+Completed 302 Found in 19ms (ActiveRecord: 10.7ms)
+
+
+Started GET "/wikis/3" for 108.12.48.204 at 2017-05-07 20:50:30 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mWiki Load (0.2ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 24]]
+  Rendered wikis/show.html.erb within layouts/application (1.8ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 24]]
+Completed 200 OK in 31ms (Views: 29.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 108.12.48.204 at 2017-05-07 21:00:58 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 24]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.0ms)
+  Rendered wikis/index.html.erb within layouts/application (46.4ms)
+Completed 200 OK in 268ms (Views: 249.8ms | ActiveRecord: 1.6ms)
+
+
+Started DELETE "/users/sign_out" for 108.12.48.204 at 2017-05-07 21:01:04 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"i6PQfNaW/q+/hknvEU03p+l3XDRlJiWm0JdXJX0+9YUPX3sQ0d+trNBX1BKWVTIgljmRm8IrNt7fbMtsnJuY5w=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 24]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 494ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 108.12.48.204 at 2017-05-07 21:01:05 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (0.4ms)
+  Rendered wikis/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 31ms (Views: 30.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wikis/3" for 108.12.48.204 at 2017-05-07 21:01:12 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mWiki Load (0.2ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 24]]
+  Rendered wikis/show.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/wikis/3/edit" for 108.12.48.204 at 2017-05-07 21:01:17 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mWiki Load (0.2ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered wikis/_form.html.erb (18.2ms)
+  Rendered wikis/edit.html.erb within layouts/application (19.3ms)
+Completed 200 OK in 47ms (Views: 45.2ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/wikis/3" for 108.12.48.204 at 2017-05-07 21:01:33 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"IaBSWQv+4SxI8h8nqMj81FEhlLo1DDQ568rdQSQzfcfYcx0go8/OT0tAKb5lhVu91vE4zEd1sDrWOxgzD/p+qA==", "wiki"=>{"title"=>"Second Wiki", "body"=>"Blah blah blah blah blah blah blah\r\n\r\nand more blahs.\r\n\r\nand yet more blahs.\r\n\r\nThis edit shouldn't work!", "private"=>"0"}, "commit"=>"Save", "id"=>"3"}
+  [1m[36mWiki Load (0.1ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 3]]
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis/3
+Completed 302 Found in 4ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/wikis/3" for 108.12.48.204 at 2017-05-07 21:01:33 +0000
+Cannot render console from 108.12.48.204! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mWiki Load (0.1ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 24]]
+  Rendered wikis/show.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.2ms)

@@ -31,6 +31,13 @@ class WikisController < ApplicationController
   
   def update
      @wiki = Wiki.find(params[:id])
+     begin
+         authorize @wiki
+     rescue
+        flash[:alert] = "You must be logged in to edit this Wiki."
+       redirect_to @wiki
+       return
+     end
      @wiki.assign_attributes(wiki_params)
  
      if @wiki.save
