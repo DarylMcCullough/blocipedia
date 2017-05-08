@@ -6,7 +6,7 @@ class WikiPolicy < ApplicationPolicy
     user.present?
   end
   
-  def create?
+  def create? # user must be logged in to create a wiki
     user.present?
   end
 end
