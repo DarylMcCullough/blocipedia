@@ -1,5 +1,11 @@
+require 'amounts'
 class ChargesController < ApplicationController
  def new
+  if ! current_user.present?
+    flash[:alert] = "You must be logged in to upgrade to a premium membership."
+       redirect_to wikis_url
+       return
+  end
    @stripe_btn_data = {
      key: "#{ Rails.configuration.stripe[:publishable_key] }",
      description: "BigMoney Membership - #{current_user.email}",

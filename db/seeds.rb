@@ -43,6 +43,15 @@
  premium.confirm
  premium.skip_confirmation!
  premium.save!
+ 
+  # Create a regular member
+ member = User.new(
+     email: 'member@example.com',
+     password: 'helloworld',
+     role: 'standard')
+ member.confirm
+ member.skip_confirmation!
+ member.save!
 
 
  puts "Seed finished"
