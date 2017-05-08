@@ -4,6 +4,7 @@
  gem 'rails', '4.2.5'
  gem 'devise'
  gem 'pundit'
+ gem 'stripe'
  
  group :production do
    gem 'pg'
@@ -13,7 +14,6 @@
  group :development do
    gem 'sqlite3'
    gem 'web-console', '~> 2.0'
-   gem 'faker'
  end
  
  gem 'sass-rails', '~> 5.0'

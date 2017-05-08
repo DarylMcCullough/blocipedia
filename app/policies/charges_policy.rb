@@ -1,5 +1,5 @@
-class WikiPolicy < ApplicationPolicy
-  
+  class WikiPolicy < ApplicationPolicy
+
   attr_reader :user, :wiki
   
   def update?

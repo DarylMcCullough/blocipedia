@@ -12,11 +12,19 @@ class WikisController < ApplicationController
   end
   
   def create
-
+      
     @wiki = Wiki.new(wiki_params)
     
     @wiki.user = current_user
-    
+      
+    begin
+         authorize @wiki
+     rescue
+        flash[:alert] = "You must be logged in to create a Wiki."
+       redirect_to action: :index
+       return
+     end
+     
      if @wiki.save!
        redirect_to @wiki, notice: "Wiki was saved successfully."
      else
