@@ -16,11 +16,22 @@ class ChargesController < ApplicationController
   def show
   end
   
+  def upgrade
+    if current_user.present?
+      current_user.premium!
+     end
+
+   flash[:notice] = "You are now a Premium member!"
+     redirect_to :wikis
+  end
+  
   def downgrade
     if current_user.present?
       current_user.standard!
      end
-     redirect_to :back
+
+   flash[:notice] = "Sorry you didn't appreciate your premium membership. You can always sign up again."
+     redirect_to :wikis
   end
   
   def create
@@ -39,10 +50,7 @@ class ChargesController < ApplicationController
      currency: 'usd'
    )
    
-   current_user.premium!
- 
-   flash[:notice] = "Thanks for all the money, #{current_user.email}! Feel free to pay me again."
-   redirect_to wikis_path # or wherever
+  upgrade
  
    # Stripe will send back CardErrors, with friendly messages
    # when something goes wrong.

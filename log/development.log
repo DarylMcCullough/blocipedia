@@ -9784,3 +9784,129 @@ Processing by WikisController#index as HTML
   Rendered wikis/_wiki.html.erb (1.1ms)
   Rendered wikis/index.html.erb within layouts/application (3.8ms)
 Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-13 11:42:37 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.4ms)
+  Rendered wikis/index.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 237ms (Views: 222.3ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/users/8/downgrade" for 108.12.52.49 at 2017-05-13 11:42:52 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChargesController#downgrade as HTML
+  Parameters: {"authenticity_token"=>"9WgsmOLOGXX0s1Oz5zNiNkLHaLBEa0MoqiVF3CJEteW4hM9VvvR0cDC5MGM0xzoDh3CfKVY16Fbeo92JUkMOOQ==", "id"=>"8"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 8ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-13 11:42:52 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mWiki Load (0.3ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (0.8ms)
+  Rendered wikis/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 33ms (Views: 31.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-13 11:44:41 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.6ms)
+  Rendered wikis/index.html.erb within layouts/application (28.7ms)
+Completed 200 OK in 238ms (Views: 223.4ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users/8/downgrade" for 108.12.52.49 at 2017-05-13 11:44:51 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChargesController#downgrade as HTML
+  Parameters: {"authenticity_token"=>"tgwsdwNZ+s3GS3tjjujW+Bvu93I/QmOD99cYkTIOiZb74M+6X2OXyAJBGLNdHI7N3lkA6y0cyP2DUYDEQgkySg==", "id"=>"8"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "role" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["role", 0], ["updated_at", "2017-05-13 11:44:51.466092"], ["id", 8]]
+  [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 17ms (ActiveRecord: 10.2ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-13 11:44:51 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (0.9ms)
+  Rendered wikis/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 29ms (Views: 27.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/charges/new" for 108.12.52.49 at 2017-05-13 11:45:00 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChargesController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered charges/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 58ms (Views: 55.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/charges" for 108.12.52.49 at 2017-05-13 11:45:36 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChargesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cxP642YBRFvJYMCMWMaXBbNZCoq66bzguuc1DZLErhU+/xkuOjspXg1qo1yLMs8wdu79E6i3F57OYa1Y4sMVyQ==", "stripeToken"=>"tok_1AIygjFkgJ7Jxetim5BMeBEl", "stripeTokenType"=>"card", "stripeEmail"=>"member@example.com"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "role" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["role", 1], ["updated_at", "2017-05-13 11:45:37.747123"], ["id", 8]]
+  [1m[35m (9.5ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/charges/new
+Completed 302 Found in 956ms (ActiveRecord: 10.1ms)
+
+
+Started GET "/charges/new" for 108.12.52.49 at 2017-05-13 11:45:37 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChargesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  Rendered charges/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 37ms (Views: 35.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-13 11:47:07 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.8ms)
+  Rendered wikis/index.html.erb within layouts/application (34.9ms)
+Completed 200 OK in 268ms (Views: 250.2ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/users/8/downgrade" for 108.12.52.49 at 2017-05-13 11:47:16 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChargesController#downgrade as HTML
+  Parameters: {"authenticity_token"=>"FvcX3fpW/H3F1JEYO0Uy4aBoi36U0/Ysqiq3++KkmxZbG/QQpmyReAHe8sjosWrUZd9854aNXVLerC+ukqMgyg==", "id"=>"8"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "role" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["role", 0], ["updated_at", "2017-05-13 11:47:16.731732"], ["id", 8]]
+  [1m[36m (17.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis
+Completed 302 Found in 25ms (ActiveRecord: 17.6ms)
+
+
+Started GET "/wikis" for 108.12.52.49 at 2017-05-13 11:47:16 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (0.9ms)
+  Rendered wikis/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.4ms)
