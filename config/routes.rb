@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+  match 'users/:id/downgrade' => 'charges#downgrade', :via => [:post], :as => 'downgrade_user'
   get "wikis/index"
   root 'wikis#index'
 end

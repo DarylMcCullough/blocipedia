@@ -1,4 +1,8 @@
  <%= form_tag charges_path do %>
-   <h4>Click the button!</h4>
+  <h2>Become a Premium Blocipedia Member!</h2>
+   <h4>Benefits:</h4>
+   <div class="benefits">As a premium member, you can create private wikis, where you control who can see and modify the content.</div>
+   
+   <h2>Click the button to enroll. Only <%= ChargesHelper.formatCents(Amount.default) %>!</h2>
    <script class='stripe-button' src="https://checkout.stripe.com/checkout.js" data-key="<%= @stripe_btn_data[:key] %>" data-amount="<%= @stripe_btn_data[:amount] %>" data-description="<%= @stripe_btn_data[:description] %>" ></script>
  <% end %>
