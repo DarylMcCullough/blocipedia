@@ -14,7 +14,7 @@ RSpec.describe ChargesController, type: :controller do
   end
 
   describe "POST downgrade" do
-       it "upgrades the user to premium" do
+       it "downgrades the user to standard" do
          user = my_user
           user.confirm
           sign_in user
