@@ -16,6 +16,27 @@ class ChargesController < ApplicationController
   def show
   end
   
+  def upgrade
+    if current_user.present?
+      current_user.premium!
+     end
+
+   flash[:notice] = "You are now a Premium member!"
+     redirect_to :wikis
+  end
+  
+  def downgrade
+   puts "in downgrade"
+    if current_user.present?
+      current_user.standard!
+      puts "in downgrade, current_user.role: #{current_user.role}"
+      puts "in downgrade, current_user.email: #{current_user.email}"
+     end
+
+   flash[:notice] = "Sorry you didn't appreciate your premium membership. You can always sign up again."
+     redirect_to :wikis
+  end
+  
   def create
    # Creates a Stripe Customer object, for associating
    # with the charge
@@ -31,9 +52,8 @@ class ChargesController < ApplicationController
      description: "BigMoney Membership - #{current_user.email}",
      currency: 'usd'
    )
- 
-   flash[:notice] = "Thanks for all the money, #{current_user.email}! Feel free to pay me again."
-   redirect_to user_path(current_user) # or wherever
+   
+  upgrade
  
    # Stripe will send back CardErrors, with friendly messages
    # when something goes wrong.
