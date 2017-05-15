@@ -9921,3 +9921,1092 @@ Processing by WikisController#index as HTML
   Rendered wikis/_wiki.html.erb (1.6ms)
   Rendered wikis/index.html.erb within layouts/application (64.1ms)
 Completed 200 OK in 275ms (Views: 259.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 20:31:59 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.2ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (1.7ms)
+  Rendered wikis/index.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 336ms (Views: 320.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 108.12.52.49 at 2017-05-15 20:32:00 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 108.12.52.49 at 2017-05-15 20:32:01 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-0de2d689dc29435fb4c628bfb202a4d73416335abdb70a48319d1cdcb22a4a99.css?body=1" for 108.12.52.49 at 2017-05-15 20:32:01 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/wikis.self-cd41dec80fd3ae8165ce88df5cede8f793ea516462cf3f2da292085df71dd7da.css?body=1" for 108.12.52.49 at 2017-05-15 20:32:01 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3d2b1085db6945c1ed2965f6b9561bfd4c3d4bfd17596a955c1ce8b4068f6b3f.css?body=1" for 108.12.52.49 at 2017-05-15 20:32:01 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 108.12.52.49 at 2017-05-15 20:32:01 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 108.12.52.49 at 2017-05-15 20:32:01 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 108.12.52.49 at 2017-05-15 20:32:01 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 108.12.52.49 at 2017-05-15 20:32:01 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 108.12.52.49 at 2017-05-15 20:32:01 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 108.12.52.49 at 2017-05-15 20:32:01 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/wikis/new" for 108.12.52.49 at 2017-05-15 20:32:07 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#new as HTML
+  Rendered wikis/_form.html.erb (742.3ms)
+  Rendered wikis/new.html.erb within layouts/application (745.2ms)
+Completed 200 OK in 780ms (Views: 779.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wikis" for 108.12.52.49 at 2017-05-15 20:32:27 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"M+FFdUd4mMqRiUHcqaZVDXDeOjJnLpLyBio2JxIuSp2+B0x14oDD44fkdPZgxtEU5XzVrTGNCEW4KuBzYD4VYQ==", "wiki"=>{"title"=>"Test Wiki", "body"=>"test body \r\nblah\r\nblah \r\nblah", "private"=>"1"}, "commit"=>"Save"}
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/wikis" for 108.12.52.49 at 2017-05-15 20:32:27 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mWiki Load (0.4ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (0.8ms)
+  Rendered wikis/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 34ms (Views: 32.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/sign_in" for 108.12.52.49 at 2017-05-15 20:32:31 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (11.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.3ms)
+Completed 200 OK in 67ms (Views: 53.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wikis/new" for 108.12.52.49 at 2017-05-15 20:32:42 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#new as HTML
+  Rendered wikis/_form.html.erb (1.9ms)
+  Rendered wikis/new.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 30ms (Views: 29.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for 108.12.52.49 at 2017-05-15 20:32:45 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 40ms (Views: 38.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 108.12.52.49 at 2017-05-15 20:32:58 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YAvE2qPpoIwQsf+xq6GnwvrxCck0ZX0YkNhXFIzcHCvt7c3aBhH7pQbcyptiwSPbb1PmVmLG568u2IFA/sxD1w==", "user"=>{"email"=>"member@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "member@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-05-13 11:02:53.479856"], ["current_sign_in_at", "2017-05-15 20:32:58.972049"], ["last_sign_in_ip", "108.12.52.49"], ["sign_in_count", 6], ["updated_at", "2017-05-15 20:32:58.973329"], ["id", 8]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 237ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 20:32:59 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (0.9ms)
+  Rendered wikis/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 27ms (Views: 26.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/wikis/new" for 108.12.52.49 at 2017-05-15 20:33:08 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#new as HTML
+  Rendered wikis/_form.html.erb (2.4ms)
+  Rendered wikis/new.html.erb within layouts/application (3.1ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+Completed 200 OK in 35ms (Views: 33.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/wikis" for 108.12.52.49 at 2017-05-15 20:33:25 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FjGe9djpP3C9Kv+GohqwNW7u5haCx2tbcT6+XKBLQcDuzvfYdoqlxvt/V5hOjYEuqsePe1IQ1VVlb1Y2rhH0Gg==", "wiki"=>{"title"=>"Test Wiki", "body"=>"blah blah blah blah blah blah blah ", "private"=>"1"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "wikis" ("title", "private", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Test Wiki"], ["private", "t"], ["body", "blah blah blah blah blah blah blah "], ["user_id", 8], ["created_at", "2017-05-15 20:33:25.663780"], ["updated_at", "2017-05-15 20:33:25.663780"]]
+  [1m[35m (95.9ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis/11
+Completed 302 Found in 103ms (ActiveRecord: 96.6ms)
+
+
+Started GET "/wikis/11" for 108.12.52.49 at 2017-05-15 20:33:26 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mWiki Load (0.4ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered wikis/show.html.erb within layouts/application (9.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+Completed 200 OK in 118ms (Views: 112.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/wikis" for 108.12.52.49 at 2017-05-15 20:33:39 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.4ms)
+  Rendered wikis/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 37ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wikis/11" for 108.12.52.49 at 2017-05-15 20:33:45 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mWiki Load (0.1ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered wikis/show.html.erb within layouts/application (2.1ms)
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+Completed 200 OK in 204ms (Views: 202.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/wikis/11/edit" for 108.12.52.49 at 2017-05-15 20:33:48 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mWiki Load (0.1ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 11]]
+  Rendered wikis/_form.html.erb (2.3ms)
+  Rendered wikis/edit.html.erb within layouts/application (3.6ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+Completed 200 OK in 54ms (Views: 52.8ms | ActiveRecord: 0.3ms)
+  [1m[36mWiki Load (2.8ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 20:42:41 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.8ms)
+  Rendered wikis/index.html.erb within layouts/application (41.1ms)
+Completed 200 OK in 420ms (Views: 404.7ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/users/sign_out" for 108.12.52.49 at 2017-05-15 20:42:49 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"z24fg90/CC2bg9j8rIuANuo8u1YoPlffkcZnTTFC+BY3kXauc1ySm93WcOJAHLEtLhXSO/jp6dGFl48nPxhNzA=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 547ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 20:42:50 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.0ms)
+  Rendered wikis/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/wikis/new" for 108.12.52.49 at 2017-05-15 20:42:56 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#new as HTML
+  Rendered wikis/_form.html.erb (26.5ms)
+  Rendered wikis/new.html.erb within layouts/application (27.9ms)
+Completed 200 OK in 56ms (Views: 55.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/wikis" for 108.12.52.49 at 2017-05-15 20:43:17 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UYuyXx7VxztY20sl2l8P5fk9Ld70jws+hW/sDkLv8cCB/FX6ylN967aVKyODxAx5SQh0yrryU49Uxl88wJTJYA==", "wiki"=>{"title"=>"Blah blah blah", "body"=>"blah blah blah blah blah blah blah blah", "private"=>"0"}, "commit"=>"Save"}
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis
+Completed 302 Found in 20ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/wikis" for 108.12.52.49 at 2017-05-15 20:43:17 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.3ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (1.1ms)
+  Rendered wikis/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 31ms (Views: 29.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 108.12.52.49 at 2017-05-15 20:43:24 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (11.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (21.8ms)
+Completed 200 OK in 57ms (Views: 52.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 108.12.52.49 at 2017-05-15 20:43:39 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4biQjPUnu6WAmpUP4Cb/ErJF3F/3EHfm0I7ueXBSnR4xz3cpIaEBdW7U9Qm5vfyOAnCFS7ltL1cBJ11L8imlvg==", "user"=>{"email"=>"member@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "member@example.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-05-15 20:32:58.972049"], ["current_sign_in_at", "2017-05-15 20:43:39.906626"], ["sign_in_count", 7], ["updated_at", "2017-05-15 20:43:39.907763"], ["id", 8]]
+  [1m[35m (12.7ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 179ms (ActiveRecord: 13.7ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 20:43:40 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mWiki Load (0.2ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (1.0ms)
+  Rendered wikis/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 29ms (Views: 28.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/wikis/new" for 108.12.52.49 at 2017-05-15 20:43:47 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#new as HTML
+  Rendered wikis/_form.html.erb (2.6ms)
+  Rendered wikis/new.html.erb within layouts/application (3.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+Completed 200 OK in 40ms (Views: 38.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/wikis" for 108.12.52.49 at 2017-05-15 20:44:04 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dhrHtT38Rw4dfnwY2huA7AtRBTAusSRVjEzZSSMIk+24+prC4ZCaRQUXoVr5nksXBMXJT9j1HicvJvXc3wkbCg==", "wiki"=>{"title"=>"Blah blah blah", "body"=>"blah blah blah blah blah blah blah", "private"=>"1"}, "commit"=>"Save"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis
+Completed 302 Found in 4ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/wikis" for 108.12.52.49 at 2017-05-15 20:44:04 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mWiki Load (0.2ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (1.0ms)
+  Rendered wikis/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 20:49:27 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "t"]]
+  Rendered wikis/_wiki.html.erb (1.1ms)
+  Rendered wikis/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 258ms (Views: 216.1ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 20:52:03 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered collection (0.0ms)
+  Rendered wikis/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 240ms (Views: 205.5ms | ActiveRecord: 1.0ms)
+  [1m[36mWiki Load (2.9ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  [1m[36m (10.5ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime, "confirmation_sent_at" datetime, "unconfirmed_email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "role" integer) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (11.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (7.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (10.1ms)[0m  CREATE TABLE "wikis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "private" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (7.4ms)[0m  [1mCREATE  INDEX "index_wikis_on_user_id" ON "wikis" ("user_id")[0m
+  [1m[35m (7.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (9.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (6.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170504223348')[0m
+  [1m[35m (8.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170427181008')
+  [1m[36m (6.3ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170501161432')[0m
+  [1m[35m (6.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170424222713')
+  [1m[36m (14.3ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime, "confirmation_sent_at" datetime, "unconfirmed_email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "role" integer) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (8.3ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (8.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (7.7ms)[0m  CREATE TABLE "wikis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "private" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (9.0ms)[0m  [1mCREATE  INDEX "index_wikis_on_user_id" ON "wikis" ("user_id")[0m
+  [1m[35m (7.3ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (10.5ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.2ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (8.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170504223348')[0m
+  [1m[35m (9.7ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170427181008')
+  [1m[36m (9.2ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170501161432')[0m
+  [1m[35m (5.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170424222713')
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "confirmed_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "don@moore.name"], ["encrypted_password", "$2a$11$2pwSzINF4l49c/s1nhh5/.yJfjI/M9bz9FWX5XnYbuXRhfPwb4S0."], ["role", 0], ["confirmed_at", "2017-05-15 21:06:09.799187"], ["created_at", "2017-05-15 21:06:09.799796"], ["updated_at", "2017-05-15 21:06:09.799796"]]
+  [1m[35m (12.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["confirmed_at", "2017-05-15 21:06:09.814226"], ["updated_at", "2017-05-15 21:06:09.818040"], ["id", 1]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "confirmed_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "maxime@pouros.biz"], ["encrypted_password", "$2a$11$dUb2ACsaC7ENxiiwkjSS/.K1PkfvXo3h2nPwVhm5iVP01Itt/odzW"], ["role", 0], ["confirmed_at", "2017-05-15 21:06:09.987409"], ["created_at", "2017-05-15 21:06:09.988136"], ["updated_at", "2017-05-15 21:06:09.988136"]]
+  [1m[35m (9.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["confirmed_at", "2017-05-15 21:06:09.999501"], ["updated_at", "2017-05-15 21:06:10.000519"], ["id", 2]]
+  [1m[36m (8.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "confirmed_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "kendall@hills.io"], ["encrypted_password", "$2a$11$bs08yWb4tMpANi7q0p9IRuv0WzpsNIHplnUEIIWGXa2/f0If7b9a6"], ["role", 0], ["confirmed_at", "2017-05-15 21:06:10.161374"], ["created_at", "2017-05-15 21:06:10.161877"], ["updated_at", "2017-05-15 21:06:10.161877"]]
+  [1m[35m (9.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["confirmed_at", "2017-05-15 21:06:10.173021"], ["updated_at", "2017-05-15 21:06:10.173904"], ["id", 3]]
+  [1m[36m (6.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "confirmed_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "randall_hintz@mann.net"], ["encrypted_password", "$2a$11$5zreEcVxD/e73efZO391m.ut5E5v1hYxLOiH4wUc6HoXPSOfwe2Sa"], ["role", 0], ["confirmed_at", "2017-05-15 21:06:10.333004"], ["created_at", "2017-05-15 21:06:10.333560"], ["updated_at", "2017-05-15 21:06:10.333560"]]
+  [1m[35m (7.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["confirmed_at", "2017-05-15 21:06:10.342337"], ["updated_at", "2017-05-15 21:06:10.343084"], ["id", 4]]
+  [1m[36m (11.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "confirmed_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "mervin@grimes.biz"], ["encrypted_password", "$2a$11$jhVgecHYNzY6OQ5xKMxoiu5BCsP7zukV4z1vPUdFKdy1fyNnr9gfK"], ["role", 0], ["confirmed_at", "2017-05-15 21:06:10.507333"], ["created_at", "2017-05-15 21:06:10.507940"], ["updated_at", "2017-05-15 21:06:10.507940"]]
+  [1m[35m (9.5ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["confirmed_at", "2017-05-15 21:06:10.519087"], ["updated_at", "2017-05-15 21:06:10.519768"], ["id", 5]]
+  [1m[36m (9.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "wikis" ("user_id", "title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["user_id", 4], ["title", "Rem dolor voluptatibus maxime culpa reprehenderit quia."], ["body", "Reiciendis a impedit maiores iste. Officia sed et est enim maiores provident culpa. Ab aut omnis aspernatur alias molestiae."], ["created_at", "2017-05-15 21:06:10.550942"], ["updated_at", "2017-05-15 21:06:10.550942"]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "wikis" ("user_id", "title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["title", "In labore voluptate aut atque nemo quod vel."], ["body", "Pariatur laudantium beatae eaque aspernatur fuga veritatis. Laborum cumque omnis incidunt cum dolorem rem. Enim et fuga et minus sed sit. Porro aut libero."], ["created_at", "2017-05-15 21:06:10.562607"], ["updated_at", "2017-05-15 21:06:10.562607"]]
+  [1m[35m (6.7ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "wikis" ("user_id", "title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["user_id", 4], ["title", "Velit quo eligendi et in aut tempore."], ["body", "Et qui aut nesciunt accusantium fugit inventore. Praesentium officia et at. Facilis ea nihil alias possimus eligendi reiciendis. Culpa voluptatum aut."], ["created_at", "2017-05-15 21:06:10.571939"], ["updated_at", "2017-05-15 21:06:10.571939"]]
+  [1m[36m (8.2ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "wikis" ("user_id", "title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 5], ["title", "Facere omnis qui veniam quaerat velit et ullam velit."], ["body", "Autem quas sed. Ut qui ratione. Nihil quia quae eaque ut. Corporis dolores commodi incidunt voluptatem. Eaque tempore ut."], ["created_at", "2017-05-15 21:06:10.582659"], ["updated_at", "2017-05-15 21:06:10.582659"]]
+  [1m[35m (7.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "wikis" ("user_id", "title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["user_id", 4], ["title", "Velit iusto sunt ipsam."], ["body", "Iste in rerum quis. Error rerum est totam ad magnam. Necessitatibus sequi neque quisquam adipisci quam eum ab. Et harum tenetur esse porro et dolor."], ["created_at", "2017-05-15 21:06:10.591967"], ["updated_at", "2017-05-15 21:06:10.591967"]]
+  [1m[36m (8.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "wikis" ("user_id", "title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 4], ["title", "Ut et et amet hic velit ipsa quis."], ["body", "Rem similique doloremque minus. Sit quas laboriosam quia dolorem. Ipsum architecto itaque qui. Dicta et aut sit. Alias dolorum est veritatis."], ["created_at", "2017-05-15 21:06:10.602522"], ["updated_at", "2017-05-15 21:06:10.602522"]]
+  [1m[35m (6.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "wikis" ("user_id", "title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["user_id", 4], ["title", "Et earum beatae fugiat reiciendis commodi sed."], ["body", "Enim dignissimos cupiditate ex tenetur. Eum et natus expedita saepe. Tempora et cum quas. Excepturi est nulla quis voluptates qui. Molestiae tenetur mollitia animi consequatur est."], ["created_at", "2017-05-15 21:06:10.611414"], ["updated_at", "2017-05-15 21:06:10.611414"]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "wikis" ("user_id", "title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 1], ["title", "Recusandae autem voluptatem expedita."], ["body", "Atque non et fugit sunt nemo esse modi. Et inventore qui est ut ratione unde. Quis officia aut sed facere qui. Sequi ut et nostrum nisi quod temporibus. Voluptatem enim dolor minus in et ratione omnis."], ["created_at", "2017-05-15 21:06:10.622719"], ["updated_at", "2017-05-15 21:06:10.622719"]]
+  [1m[35m (7.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "wikis" ("user_id", "title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)  [["user_id", 2], ["title", "Ut quia explicabo nemo quas aliquid minima esse exercitationem."], ["body", "Laudantium perferendis dolore et quibusdam et praesentium optio. Qui et aut aut quos et non. Voluptatem eos in ad. Dolorem neque numquam quisquam. Vel voluptas molestiae numquam omnis eaque aspernatur."], ["created_at", "2017-05-15 21:06:10.632431"], ["updated_at", "2017-05-15 21:06:10.632431"]]
+  [1m[36m (8.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "wikis" ("user_id", "title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["user_id", 3], ["title", "Laboriosam voluptate asperiores aut architecto nesciunt."], ["body", "Voluptatibus magni ducimus qui similique. Fugit assumenda repellat et repudiandae dolore deleniti vero. Repellat et illo nulla. Eum possimus voluptas magni id eius et. Voluptatibus omnis officia."], ["created_at", "2017-05-15 21:06:10.643219"], ["updated_at", "2017-05-15 21:06:10.643219"]]
+  [1m[35m (7.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "role", "confirmed_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "admin@example.com"], ["encrypted_password", "$2a$11$KmhceFzCWbGSQomA.8KaH.gcEhsijcmgQdrgdTv1fNqVag0SqNshC"], ["role", 2], ["confirmed_at", "2017-05-15 21:06:10.804168"], ["created_at", "2017-05-15 21:06:10.804898"], ["updated_at", "2017-05-15 21:06:10.804898"]]
+  [1m[36m (9.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["confirmed_at", "2017-05-15 21:06:10.817017"], ["updated_at", "2017-05-15 21:06:10.817700"], ["id", 6]]
+  [1m[35m (6.8ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "role", "confirmed_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "premium@example.com"], ["encrypted_password", "$2a$11$ef9YrWy5zbzdHY9y2/Oo7eCgmqfhLSNunFF8RhAqp0pJTn3dkgAHy"], ["role", 1], ["confirmed_at", "2017-05-15 21:06:10.978252"], ["created_at", "2017-05-15 21:06:10.979041"], ["updated_at", "2017-05-15 21:06:10.979041"]]
+  [1m[36m (15.9ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["confirmed_at", "2017-05-15 21:06:10.997367"], ["updated_at", "2017-05-15 21:06:10.998423"], ["id", 7]]
+  [1m[35m (8.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "role", "confirmed_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "member@example.com"], ["encrypted_password", "$2a$11$Wey2aEf7oONhNlGXJwT3iOalpq0CDVNqiuU/55cGAVK6xnlfnrnKy"], ["role", 0], ["confirmed_at", "2017-05-15 21:06:11.161474"], ["created_at", "2017-05-15 21:06:11.162068"], ["updated_at", "2017-05-15 21:06:11.162068"]]
+  [1m[36m (9.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["confirmed_at", "2017-05-15 21:06:11.173549"], ["updated_at", "2017-05-15 21:06:11.174355"], ["id", 8]]
+  [1m[35m (6.9ms)[0m  commit transaction
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "wikis"
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:06:34 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered collection (0.0ms)
+  Rendered wikis/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 277ms (Views: 228.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/users/sign_in" for 108.12.52.49 at 2017-05-15 21:06:50 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (11.1ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (427.1ms)
+Completed 200 OK in 454ms (Views: 452.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 108.12.52.49 at 2017-05-15 21:07:06 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6dT1SWqXhgHSSSjbnrXhgklp+t/S76K7TZW61e/XL0cnNKg+tvtbSsog9Zm9MCp5Rv02oCSrmMnu/5ZAE9anoA==", "user"=>{"email"=>"member@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "member@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-05-15 21:07:06.596480"], ["current_sign_in_at", "2017-05-15 21:07:06.596480"], ["last_sign_in_ip", "108.12.52.49"], ["current_sign_in_ip", "108.12.52.49"], ["sign_in_count", 1], ["updated_at", "2017-05-15 21:07:06.597715"], ["id", 8]]
+  [1m[36m (13.8ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 194ms (ActiveRecord: 14.6ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:07:07 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.1ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered collection (0.0ms)
+  Rendered wikis/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.3ms)
+  [1m[36mWiki Load (0.1ms)[0m  [1mSELECT  "wikis".* FROM "wikis"  ORDER BY "wikis"."id" ASC LIMIT 1[0m
+  [1m[35mWiki Load (0.5ms)[0m  SELECT "wikis".* FROM "wikis"
+  [1m[36mWiki Load (0.5ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  [1m[36m (8.0ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime, "confirmation_sent_at" datetime, "unconfirmed_email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "role" integer) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (6.2ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (11.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (7.4ms)[0m  CREATE TABLE "wikis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "private" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (7.0ms)[0m  [1mCREATE  INDEX "index_wikis_on_user_id" ON "wikis" ("user_id")[0m
+  [1m[35m (7.6ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (5.7ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (5.4ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170504223348')[0m
+  [1m[35m (5.6ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170427181008')
+  [1m[36m (5.5ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170501161432')[0m
+  [1m[35m (5.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170424222713')
+  [1m[36m (6.2ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime, "confirmation_sent_at" datetime, "unconfirmed_email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL, "role" integer) [0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (5.9ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (6.7ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (6.8ms)[0m  CREATE TABLE "wikis" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "body" text, "private" boolean, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (5.9ms)[0m  [1mCREATE  INDEX "index_wikis_on_user_id" ON "wikis" ("user_id")[0m
+  [1m[35m (7.2ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (7.0ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.1ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36m (5.8ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170504223348')[0m
+  [1m[35m (5.8ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170427181008')
+  [1m[36m (6.6ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20170501161432')[0m
+  [1m[35m (5.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20170424222713')
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "confirmed_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "olga@wolff.name"], ["encrypted_password", "$2a$11$OJeYE4kpAkN.llum/byE4enSdJx69KQ.93FIx5zFwHVH2deSPt/XO"], ["role", 0], ["confirmed_at", "2017-05-15 21:09:53.329668"], ["created_at", "2017-05-15 21:09:53.330268"], ["updated_at", "2017-05-15 21:09:53.330268"]]
+  [1m[35m (9.5ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["confirmed_at", "2017-05-15 21:09:53.341948"], ["updated_at", "2017-05-15 21:09:53.344993"], ["id", 1]]
+  [1m[36m (6.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "confirmed_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "coralie@heaneyjohns.com"], ["encrypted_password", "$2a$11$J70q0FBDNckJNS9xoB7mQ.ROjievT9.7kVFqUdWQuy/lAr2AZL0HG"], ["role", 0], ["confirmed_at", "2017-05-15 21:09:53.506644"], ["created_at", "2017-05-15 21:09:53.507209"], ["updated_at", "2017-05-15 21:09:53.507209"]]
+  [1m[35m (9.4ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["confirmed_at", "2017-05-15 21:09:53.518180"], ["updated_at", "2017-05-15 21:09:53.518898"], ["id", 2]]
+  [1m[36m (7.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "confirmed_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "wilford@larkin.name"], ["encrypted_password", "$2a$11$uvS93OHtRruMGuWkNhyoEu82zjElFrQZl7jBnGxobq0PZQbMbqtey"], ["role", 0], ["confirmed_at", "2017-05-15 21:09:53.676374"], ["created_at", "2017-05-15 21:09:53.676878"], ["updated_at", "2017-05-15 21:09:53.676878"]]
+  [1m[35m (10.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["confirmed_at", "2017-05-15 21:09:53.689054"], ["updated_at", "2017-05-15 21:09:53.689640"], ["id", 3]]
+  [1m[36m (6.8ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "confirmed_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "breanna@howe.co"], ["encrypted_password", "$2a$11$wVSavbDLmaCrqMwJhejr8eshlwbCZgyjL55kkt1JFdFThesg4lvHm"], ["role", 0], ["confirmed_at", "2017-05-15 21:09:53.846288"], ["created_at", "2017-05-15 21:09:53.846886"], ["updated_at", "2017-05-15 21:09:53.846886"]]
+  [1m[35m (8.7ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["confirmed_at", "2017-05-15 21:09:53.857202"], ["updated_at", "2017-05-15 21:09:53.858404"], ["id", 4]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "confirmed_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["email", "tristian_farrell@collier.org"], ["encrypted_password", "$2a$11$ANjwl6ZB4y40isuLwkYHiey1CCB9SjA3grGoeL74F2w2IEEOiH/uC"], ["role", 0], ["confirmed_at", "2017-05-15 21:09:54.015777"], ["created_at", "2017-05-15 21:09:54.016355"], ["updated_at", "2017-05-15 21:09:54.016355"]]
+  [1m[35m (8.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["confirmed_at", "2017-05-15 21:09:54.026733"], ["updated_at", "2017-05-15 21:09:54.027507"], ["id", 5]]
+  [1m[36m (8.1ms)[0m  [1mcommit transaction[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "wikis" ("user_id", "title", "body", "private", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["user_id", 2], ["title", "Incidunt velit quia libero."], ["body", "Ullam odit voluptates quibusdam deleniti. Ut sit expedita vero aut aliquam saepe. Atque iste voluptatum velit hic consequatur incidunt voluptatibus. Dolorem labore dolor aperiam nemo."], ["private", "f"], ["created_at", "2017-05-15 21:09:54.055302"], ["updated_at", "2017-05-15 21:09:54.055302"]]
+  [1m[36m (8.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "wikis" ("user_id", "title", "body", "private", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 4], ["title", "Sed quo voluptatem sunt in."], ["body", "Reprehenderit pariatur et facere et dolor. Molestias incidunt quaerat amet commodi. Laboriosam vel ab illum dolores reiciendis."], ["private", "f"], ["created_at", "2017-05-15 21:09:54.067066"], ["updated_at", "2017-05-15 21:09:54.067066"]]
+  [1m[35m (8.2ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "wikis" ("user_id", "title", "body", "private", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["user_id", 2], ["title", "Facilis non consequatur id aperiam eum."], ["body", "Ut id et amet architecto sapiente. In est autem ut dolores incidunt molestiae. Aut quos alias."], ["private", "f"], ["created_at", "2017-05-15 21:09:54.077767"], ["updated_at", "2017-05-15 21:09:54.077767"]]
+  [1m[36m (6.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "wikis" ("user_id", "title", "body", "private", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 5], ["title", "Exercitationem repellendus fuga laudantium illo est dolorem."], ["body", "Maxime ex nulla a. Officia nesciunt eveniet laudantium qui hic dolores. Qui fugit est eos aut deleniti expedita."], ["private", "f"], ["created_at", "2017-05-15 21:09:54.085949"], ["updated_at", "2017-05-15 21:09:54.085949"]]
+  [1m[35m (6.3ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "wikis" ("user_id", "title", "body", "private", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["user_id", 5], ["title", "Voluptatibus ut ipsum nisi minus."], ["body", "Modi vel assumenda ut et odio et ex. Ipsa deleniti neque. Necessitatibus officia nam dolore libero non voluptate. Nemo placeat est est."], ["private", "f"], ["created_at", "2017-05-15 21:09:54.094430"], ["updated_at", "2017-05-15 21:09:54.094430"]]
+  [1m[36m (6.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "wikis" ("user_id", "title", "body", "private", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 5], ["title", "Nihil eos quia voluptas nesciunt vero."], ["body", "Omnis aut aliquam. Sunt repellat nesciunt omnis autem ut labore. Delectus tempora fugit est perferendis. Sint veritatis tenetur velit dolorem. Qui natus quas."], ["private", "f"], ["created_at", "2017-05-15 21:09:54.102677"], ["updated_at", "2017-05-15 21:09:54.102677"]]
+  [1m[35m (6.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "wikis" ("user_id", "title", "body", "private", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["user_id", 5], ["title", "Molestiae sequi harum velit et nihil velit rerum."], ["body", "Pariatur eos consectetur debitis harum illo. Sed voluptatem aliquam unde et natus. Amet dolor molestiae qui harum sint."], ["private", "f"], ["created_at", "2017-05-15 21:09:54.111241"], ["updated_at", "2017-05-15 21:09:54.111241"]]
+  [1m[36m (6.7ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "wikis" ("user_id", "title", "body", "private", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 5], ["title", "Corrupti minus blanditiis et."], ["body", "Non quasi asperiores et cum. Aliquid praesentium et velit dolorem corporis. Autem ullam possimus qui eos architecto. Officiis voluptate non sed et commodi."], ["private", "f"], ["created_at", "2017-05-15 21:09:54.119944"], ["updated_at", "2017-05-15 21:09:54.119944"]]
+  [1m[35m (7.7ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "wikis" ("user_id", "title", "body", "private", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["user_id", 3], ["title", "Labore aut placeat iste et accusamus."], ["body", "Eos maiores pariatur. Quisquam eveniet nihil eum. Cumque quibusdam dolorem cupiditate illum rerum nulla inventore."], ["private", "f"], ["created_at", "2017-05-15 21:09:54.129818"], ["updated_at", "2017-05-15 21:09:54.129818"]]
+  [1m[36m (8.3ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "wikis" ("user_id", "title", "body", "private", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["user_id", 3], ["title", "Qui fuga cupiditate qui."], ["body", "Repellat rerum minima magni dolor cupiditate. Est placeat et optio dolore. Sapiente aspernatur eius cumque. Laudantium recusandae ut reprehenderit. Vel ab tempora magnam."], ["private", "f"], ["created_at", "2017-05-15 21:09:54.140419"], ["updated_at", "2017-05-15 21:09:54.140419"]]
+  [1m[35m (9.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "role", "confirmed_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "admin@example.com"], ["encrypted_password", "$2a$11$ap604WE4b.IP/pPKI4As3eKi5EscvOv3HlN6aSZPKu5vNxjMgTlnq"], ["role", 2], ["confirmed_at", "2017-05-15 21:09:54.299085"], ["created_at", "2017-05-15 21:09:54.299651"], ["updated_at", "2017-05-15 21:09:54.299651"]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["confirmed_at", "2017-05-15 21:09:54.309769"], ["updated_at", "2017-05-15 21:09:54.310723"], ["id", 6]]
+  [1m[35m (8.2ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "role", "confirmed_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "premium@example.com"], ["encrypted_password", "$2a$11$S2Qs2bAAzpXSM0LEpTReYubZNwsE9O.xI0cp1ud6IAQkSWXHFIz36"], ["role", 1], ["confirmed_at", "2017-05-15 21:09:54.468679"], ["created_at", "2017-05-15 21:09:54.469326"], ["updated_at", "2017-05-15 21:09:54.469326"]]
+  [1m[36m (8.1ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["confirmed_at", "2017-05-15 21:09:54.479586"], ["updated_at", "2017-05-15 21:09:54.480355"], ["id", 7]]
+  [1m[35m (7.9ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "role", "confirmed_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)  [["email", "member@example.com"], ["encrypted_password", "$2a$11$h2TlmlHueruMCFmcZXQcau/k1HVwVcYEkrWgHflueuxsiph9U4.ni"], ["role", 0], ["confirmed_at", "2017-05-15 21:09:54.641057"], ["created_at", "2017-05-15 21:09:54.641608"], ["updated_at", "2017-05-15 21:09:54.641608"]]
+  [1m[36m (8.4ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["confirmed_at", "2017-05-15 21:09:54.651883"], ["updated_at", "2017-05-15 21:09:54.652684"], ["id", 8]]
+  [1m[35m (8.8ms)[0m  commit transaction
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users"[0m
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "wikis"
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:10:09 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.4ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.8ms)
+  Rendered wikis/index.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 338ms (Views: 293.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/users/sign_in" for 108.12.52.49 at 2017-05-15 21:10:20 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (12.8ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (612.9ms)
+Completed 200 OK in 650ms (Views: 646.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 108.12.52.49 at 2017-05-15 21:10:34 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0AVGQxRlOnfyo/Y10btNlHXYLAyDlIyTpGhtMpqWXkQalSEZgK89Dv0XmWjol7yeGEppvi+R9UQgHwCcU4rCLw==", "user"=>{"email"=>"premium@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "premium@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-05-15 21:10:34.378730"], ["current_sign_in_at", "2017-05-15 21:10:34.378730"], ["last_sign_in_ip", "108.12.52.49"], ["current_sign_in_ip", "108.12.52.49"], ["sign_in_count", 1], ["updated_at", "2017-05-15 21:10:34.380169"], ["id", 7]]
+  [1m[36m (7.7ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 179ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:10:34 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.8ms)
+  Rendered wikis/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 39ms (Views: 35.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/wikis/1" for 108.12.52.49 at 2017-05-15 21:10:37 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mWiki Load (0.4ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered wikis/show.html.erb within layouts/application (12.3ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+Completed 200 OK in 49ms (Views: 44.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/wikis/1/edit" for 108.12.52.49 at 2017-05-15 21:10:40 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered wikis/_form.html.erb (4.9ms)
+  Rendered wikis/edit.html.erb within layouts/application (6.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+Completed 200 OK in 43ms (Views: 41.3ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/wikis/1" for 108.12.52.49 at 2017-05-15 21:10:54 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0HTvePyUMiGQzik9CXC/hK/jdT/QV1KFFtHlW7wOuChRWaS48S7LuvvgASzm+u0oD+CV5dATLUOgVXsoEqOaWQ==", "wiki"=>{"title"=>"A Private wiki", "body"=>"Ullam odit voluptates quibusdam deleniti. Ut sit expedita vero aut aliquam saepe. Atque iste voluptatum velit hic consequatur incidunt voluptatibus. Dolorem labore dolor aperiam nemo.", "private"=>"1"}, "commit"=>"Save", "id"=>"1"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "wikis" SET "title" = ?, "private" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["title", "A Private wiki"], ["private", "t"], ["updated_at", "2017-05-15 21:10:54.419106"], ["id", 1]]
+  [1m[35m (10.3ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis/1
+Completed 302 Found in 20ms (ActiveRecord: 11.1ms)
+
+
+Started GET "/wikis/1" for 108.12.52.49 at 2017-05-15 21:10:54 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered wikis/show.html.erb within layouts/application (2.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+Completed 200 OK in 47ms (Views: 45.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/users/sign_out" for 108.12.52.49 at 2017-05-15 21:11:05 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eBR5O+AdOqh7zPqYvEgTlOmdwWz/X/V04x+7iJScCDT5OTL77afDMxDi0olTwkE4SZ4htv8birJVmyX7OjEqRQ=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 17ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:11:07 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.8ms)
+  Rendered wikis/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 58ms (Views: 56.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 108.12.52.49 at 2017-05-15 21:11:14 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (7.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 45ms (Views: 44.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 108.12.52.49 at 2017-05-15 21:11:26 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OOPz5Nh/UJ4nzdyZZplxm9m9zkyZ1A6jZQrsR3EPBGn89r7dxhjxc/iduysqNvK/TLKWLscxFeu5DdUbMPEeCw==", "user"=>{"email"=>"member@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "member@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-05-15 21:11:27.118245"], ["current_sign_in_at", "2017-05-15 21:11:27.118245"], ["last_sign_in_ip", "108.12.52.49"], ["current_sign_in_ip", "108.12.52.49"], ["sign_in_count", 1], ["updated_at", "2017-05-15 21:11:27.119285"], ["id", 8]]
+  [1m[36m (9.4ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 169ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:11:27 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.2ms)
+  Rendered wikis/index.html.erb within layouts/application (160.4ms)
+Completed 200 OK in 198ms (Views: 194.0ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 108.12.52.49 at 2017-05-15 21:11:40 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"eg5c3FVnjZVTMbmswZoTRr/MnKRQ1eDgX7PLaSmPGx5C/qcd91RFMkGW89e5ok4QKlc30M9LvzmWHDjYMFMXxw=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:11:40 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.0ms)
+  Rendered wikis/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_in" for 108.12.52.49 at 2017-05-15 21:11:43 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 44ms (Views: 42.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 108.12.52.49 at 2017-05-15 21:12:02 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"H3rraJBDIj2GqMbS5dlANMkyH3pQDWIorKpkoA4/8pYJSQJyZRPdfO3F6TNJ4dkLuBhwa3zKuSH7+o8aqMW5Fw==", "user"=>{"email"=>"admin@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "admin@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2017-05-15 21:12:02.387613"], ["current_sign_in_at", "2017-05-15 21:12:02.387613"], ["last_sign_in_ip", "108.12.52.49"], ["current_sign_in_ip", "108.12.52.49"], ["sign_in_count", 1], ["updated_at", "2017-05-15 21:12:02.388605"], ["id", 6]]
+  [1m[36m (13.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 173ms (ActiveRecord: 13.6ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:12:02 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.8ms)
+  Rendered wikis/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 51ms (Views: 48.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:26:54 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (2.1ms)
+  Rendered wikis/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 342ms (Views: 299.1ms | ActiveRecord: 1.2ms)
+
+
+Started DELETE "/users/sign_out" for 108.12.52.49 at 2017-05-15 21:27:00 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5kVQjnKEEFyh8xGcuNGEFnb82cQ1cVyCI4HUYfwz0V7e57jD4gW1a6KdmhGEJ7CKOKjaB/dS6ai/BxdStfTn8Q=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 6]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 482ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:27:01 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (0.9ms)
+  Rendered wikis/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 31ms (Views: 26.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wikis/new" for 108.12.52.49 at 2017-05-15 21:27:16 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#new as HTML
+  Rendered wikis/_form.html.erb (22.2ms)
+  Rendered wikis/new.html.erb within layouts/application (23.9ms)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `admin?' for nil:NilClass):
+    17:      <%= f.label :body %>
+    18:      <%= f.text_area :body, rows: 8, class: 'form-control', placeholder: "Enter wiki body" %>
+    19:    <% end %>
+    20:    <% if current_user.admin? || current_user.premium? %>
+    21:      <div class="form-group">
+    22:        <%= f.label :private, class: 'checkbox' do %>
+    23:          <%= f.check_box :private %> Private wiki
+  app/views/wikis/_form.html.erb:20:in `block in _app_views_wikis__form_html_erb___4227230070320112982_70096623630420'
+  app/views/wikis/_form.html.erb:1:in `_app_views_wikis__form_html_erb___4227230070320112982_70096623630420'
+  app/views/wikis/new.html.erb:13:in `_app_views_wikis_new_html_erb___1145894337911959930_70096646154740'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (33.4ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:32:26 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.3ms)[0m  SELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.8ms)
+  Rendered wikis/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 263ms (Views: 239.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/wikis/2" for 108.12.52.49 at 2017-05-15 21:32:34 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered wikis/show.html.erb within layouts/application (441.6ms)
+Completed 200 OK in 471ms (Views: 466.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:33:56 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.3ms)[0m  SELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.6ms)
+  Rendered wikis/index.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 243ms (Views: 218.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/wikis/2" for 108.12.52.49 at 2017-05-15 21:34:01 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 4]]
+  Rendered wikis/show.html.erb within layouts/application (542.0ms)
+Completed 200 OK in 573ms (Views: 568.5ms | ActiveRecord: 0.9ms)
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis"  ORDER BY "wikis"."id" ASC LIMIT 1[0m
+  [1m[35mWiki Load (0.4ms)[0m  SELECT "wikis".* FROM "wikis"
+  [1m[36mWiki Load (0.4ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  [1m[36mUser Load (2.7ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mWiki Load (0.4ms)[0m  SELECT "wikis".* FROM "wikis" WHERE "wikis"."user_id" = ?  [["user_id", 2]]
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:54:01 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.3ms)[0m  SELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (2.0ms)
+  Rendered wikis/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 397ms (Views: 366.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/users/sign_in" for 108.12.52.49 at 2017-05-15 21:54:06 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (12.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (513.5ms)
+Completed 200 OK in 559ms (Views: 544.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/sign_in" for 108.12.52.49 at 2017-05-15 21:54:18 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LbM1IU4mRsL9LimJc0SOHoa8ts7C3ntdqZIV8FsT+lfO5f0AYQ7yxQb4yFdkKEbCT23P/aozNF06yhQxdpb1HA==", "user"=>{"email"=>"member@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "member@example.com"]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.5ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2017-05-15 21:54:18.495326"], ["sign_in_count", 2], ["updated_at", "2017-05-15 21:54:18.497327"], ["id", 8]]
+  [1m[35m (9.0ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 188ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:54:18 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mWiki Load (0.1ms)[0m  SELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.4ms)
+  Rendered wikis/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 46ms (Views: 43.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/wikis/new" for 108.12.52.49 at 2017-05-15 21:54:23 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  Rendered wikis/_form.html.erb (7.0ms)
+  Rendered wikis/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 48ms (Views: 46.8ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/users/sign_out" for 108.12.52.49 at 2017-05-15 21:54:46 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"qHKzDzl57zarRvxWJgAzFPJMKO0T+NNsjH2Hx2EPFEQygwbmL83CBEfRkz10YZrNsJdw6cU3OzDUQEd/Qq3Ymw=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 9ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:54:46 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.1ms)
+  Rendered wikis/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 33ms (Views: 31.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 108.12.52.49 at 2017-05-15 21:54:50 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (5.5ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 38ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 108.12.52.49 at 2017-05-15 21:55:02 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TbstPp1nC0aEvs7TRDvgsPIfI5yyti2UQzzC33kyrpTMHe+Rqb0NIYGAeY7dY0A2vHH7U/WgLKY1dfZ/xVRaVQ==", "user"=>{"email"=>"premium@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "premium@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2017-05-15 21:55:02.167781"], ["sign_in_count", 2], ["updated_at", "2017-05-15 21:55:02.168978"], ["id", 7]]
+  [1m[36m (8.3ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 161ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:55:02 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.2ms)
+  Rendered wikis/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 29ms (Views: 26.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/wikis/1" for 108.12.52.49 at 2017-05-15 21:55:08 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mWiki Load (0.2ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered wikis/show.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 44ms (Views: 40.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/wikis/new" for 108.12.52.49 at 2017-05-15 21:55:23 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  Rendered wikis/_form.html.erb (3.0ms)
+  Rendered wikis/new.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 29ms (Views: 28.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/wikis" for 108.12.52.49 at 2017-05-15 21:55:42 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JhZ89TF+RbnyQ25VYsZp7cF+SBYO+1VhC9hzMcQyg0NW2OvvnpZak+R1KOAFCbcIVxUAB1rIK8c++aGlhzq4BQ==", "wiki"=>{"title"=>"Another private wiki", "body"=>"asdfasdf asdfasdfas asdfasdf asdfasdf asdfasdf asdfasdf", "private"=>"1"}, "commit"=>"Save"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis
+Completed 302 Found in 5ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/wikis" for 108.12.52.49 at 2017-05-15 21:55:42 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+  [1m[35mWiki Load (0.2ms)[0m  SELECT "wikis".* FROM "wikis"
+  Rendered wikis/_wiki.html.erb (1.0ms)
+  Rendered wikis/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.3ms)
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis"  ORDER BY "wikis"."id" DESC LIMIT 1[0m
+
+
+Started GET "/" for 108.12.52.49 at 2017-05-15 21:56:53 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36mWiki Load (0.4ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (2.7ms)
+  Rendered wikis/index.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 319ms (Views: 275.3ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/wikis/new" for 108.12.52.49 at 2017-05-15 21:56:58 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  Rendered wikis/_form.html.erb (623.5ms)
+  Rendered wikis/new.html.erb within layouts/application (624.8ms)
+Completed 200 OK in 656ms (Views: 655.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/wikis" for 108.12.52.49 at 2017-05-15 21:57:15 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZRFD7qSLvOL3SmJTvhDoQw2RJTWUd8iNAIBdOalitk0V39T0C2OjyOF8JObZ3zamm/ptJMBEtis1oY+t6mqNCw==", "wiki"=>{"title"=>"Another private wiki", "body"=>"ASDF ASDFA ASDF ASDF ASDF ASDF ASDF ", "private"=>"1"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 7]]
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis
+Completed 302 Found in 16ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/wikis" for 108.12.52.49 at 2017-05-15 21:57:15 +0000
+Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 7]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.2ms)
+  Rendered wikis/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 36ms (Views: 34.2ms | ActiveRecord: 0.3ms)

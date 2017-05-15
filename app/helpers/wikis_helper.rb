@@ -1,9 +1,9 @@
 module WikisHelper
     def user_is_authorized_for_wikis?
-        return true
+        return current_user.present?
    end
    
    def user_is_authorized_for_wiki?(wiki)
-        return true
+        return current_user.present?
    end
 end

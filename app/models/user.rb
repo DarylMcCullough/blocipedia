@@ -4,8 +4,26 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable, :confirmable,
          :recoverable, :rememberable, :trackable, :validatable
          
+  has_many :wikis, dependent: :destroy
+
   after_initialize :init
   enum role: [:standard, :premium, :admin]
+  
+  def upgrade
+    if self.standard?
+      self.premium!
+    end
+  end
+  
+  def downgrade
+    if self.premium?
+      self.standard!
+      self.wikis.each do |wiki|
+        wiki.private = false
+      end
+    end
+    
+  end
   
   def init
     self.role ||= :standard

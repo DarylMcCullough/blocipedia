@@ -1,5 +1,9 @@
 class WikisController < ApplicationController
   def index
+      if ! current_user.present? || current_user.standard?
+          @wikis = Wiki.where(private: false)
+          return
+      end
       @wikis = Wiki.all
   end
 
@@ -14,13 +18,21 @@ class WikisController < ApplicationController
   def create
       
     @wiki = Wiki.new(wiki_params)
-    
+
     @wiki.user = current_user
       
     begin
          authorize @wiki
      rescue
-        flash[:alert] = "You must be logged in to create a Wiki."
+        
+        if ! current_user.present?
+            alert = "You must be logged in to create a wiki"
+        elsif current_user.standard? && @wiki.private
+            alert = "You are not authorized to create private wikis"
+        else
+            alert = "You are not authorized to do that, for some reason"
+        end
+        flash[:alert] = alert
        redirect_to action: :index
        return
      end

@@ -18,7 +18,7 @@ class ChargesController < ApplicationController
   
   def upgrade
     if current_user.present?
-      current_user.premium!
+      current_user.upgrade
      end
 
    flash[:notice] = "You are now a Premium member!"
@@ -28,7 +28,7 @@ class ChargesController < ApplicationController
   def downgrade
    puts "in downgrade"
     if current_user.present?
-      current_user.standard!
+      current_user.downgrade
       puts "in downgrade, current_user.role: #{current_user.role}"
       puts "in downgrade, current_user.email: #{current_user.email}"
      end
