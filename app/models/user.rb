@@ -20,6 +20,7 @@ class User < ActiveRecord::Base
       self.standard!
       self.wikis.each do |wiki|
         wiki.private = false
+        wiki.save!
       end
     end
     

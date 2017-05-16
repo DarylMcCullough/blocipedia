@@ -23,7 +23,10 @@ class WikisController < ApplicationController
       
     begin
          authorize @wiki
-     rescue
+     rescue => error
+        puts "in here..."
+        binding.pry
+        puts error.message
         
         if ! current_user.present?
             alert = "You must be logged in to create a wiki"

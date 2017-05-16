@@ -11260,3 +11260,1263 @@ Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 108.12.52.49 at 2017-05-15 22:28:04 +0000
 Cannot render console from 108.12.52.49! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 21:28:12 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.3ms)[0m  SELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.8ms)
+  Rendered wikis/index.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 363ms (Views: 327.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 108.12.50.178 at 2017-05-16 21:28:13 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 108.12.50.178 at 2017-05-16 21:28:13 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/wikis.self-cd41dec80fd3ae8165ce88df5cede8f793ea516462cf3f2da292085df71dd7da.css?body=1" for 108.12.50.178 at 2017-05-16 21:28:13 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-0de2d689dc29435fb4c628bfb202a4d73416335abdb70a48319d1cdcb22a4a99.css?body=1" for 108.12.50.178 at 2017-05-16 21:28:13 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3d2b1085db6945c1ed2965f6b9561bfd4c3d4bfd17596a955c1ce8b4068f6b3f.css?body=1" for 108.12.50.178 at 2017-05-16 21:28:13 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 108.12.50.178 at 2017-05-16 21:28:13 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 108.12.50.178 at 2017-05-16 21:28:13 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 108.12.50.178 at 2017-05-16 21:28:13 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 108.12.50.178 at 2017-05-16 21:28:14 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 108.12.50.178 at 2017-05-16 21:28:14 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 108.12.50.178 at 2017-05-16 21:28:14 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 108.12.50.178 at 2017-05-16 21:28:44 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (19.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (779.3ms)
+Completed 200 OK in 861ms (Views: 818.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users/sign_in" for 108.12.50.178 at 2017-05-16 21:29:56 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fJVdddOe0EgbRe6jmTcr5vCjD0JkCTt9zgWy5OGux/KW83YdUwYdB/RGaDr8lVQxkk08qme+9N6pXnI2ARaOzw==", "user"=>{"email"=>"member@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "member@example.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-05-16 21:29:56.354614"], ["current_sign_in_at", "2017-05-16 21:29:56.354614"], ["last_sign_in_ip", "108.12.50.178"], ["current_sign_in_ip", "108.12.50.178"], ["sign_in_count", 1], ["updated_at", "2017-05-16 21:29:56.355806"], ["id", 8]]
+  [1m[35m (10.3ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 177ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 21:29:56 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mWiki Load (0.1ms)[0m  SELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.1ms)
+  Rendered wikis/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/wikis/new" for 108.12.50.178 at 2017-05-16 21:30:00 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#new as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  Rendered wikis/_form.html.erb (5.3ms)
+  Rendered wikis/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 38ms (Views: 37.0ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/wikis" for 108.12.50.178 at 2017-05-16 21:30:14 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wBuasW/FoWwPAfEkL6yotCPTIeS5cmz7AVsaDULM1jdkcgvKRi9Bk9q6gmS4/EjnULQBQMLXRaAB7HyQAZ51Fg==", "wiki"=>{"title"=>"Brand new wiki", "body"=>"new new new new new new enw "}, "commit"=>"Save"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis
+Completed 302 Found in 18ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/wikis" for 108.12.50.178 at 2017-05-16 21:30:14 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mWiki Load (0.2ms)[0m  SELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.9ms)
+  Rendered wikis/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 42ms (Views: 39.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 21:32:45 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (3.0ms)
+  Rendered wikis/index.html.erb within layouts/application (17.2ms)
+Completed 200 OK in 396ms (Views: 340.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/wikis/new" for 108.12.50.178 at 2017-05-16 21:32:48 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered wikis/_form.html.erb (609.7ms)
+  Rendered wikis/new.html.erb within layouts/application (611.0ms)
+Completed 200 OK in 643ms (Views: 641.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/wikis" for 108.12.50.178 at 2017-05-16 21:33:05 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"x8fMWh4Zgys6q9L2BlA2/NmbOJ9CXNVvXphoD547s0tjrl0hN/Nj1O8QobaRANavqvwYOzn5/DReLw6S3WkQag==", "wiki"=>{"title"=>"Brand new wiki", "body"=>"blah blah blah blah blah blah blah "}, "commit"=>"Save"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis
+Completed 302 Found in 17ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/wikis" for 108.12.50.178 at 2017-05-16 21:33:06 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.9ms)
+  Rendered wikis/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 54ms (Views: 50.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 21:37:20 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.5ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (3.3ms)
+  Rendered wikis/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 401ms (Views: 334.9ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/wikis/new" for 108.12.50.178 at 2017-05-16 21:37:24 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered wikis/_form.html.erb (926.1ms)
+  Rendered wikis/new.html.erb within layouts/application (927.5ms)
+Completed 200 OK in 976ms (Views: 974.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/wikis" for 108.12.50.178 at 2017-05-16 21:37:41 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kEUaLSU7/x1r9ylG4ad90FQpiMj1s915LF73GIPKiqc0LItWDNEf4r5MWgZ2952DJ06obI4W9CIs6ZGFwJgphg==", "wiki"=>{"title"=>"Brand new wiki", "body"=>"blah blah blah blah"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis
+Completed 302 Found in 17ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/wikis" for 108.12.50.178 at 2017-05-16 21:37:41 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.6ms)
+  Rendered wikis/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 46ms (Views: 42.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 21:40:44 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.4ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (2.8ms)
+  Rendered wikis/index.html.erb within layouts/application (17.8ms)
+Completed 200 OK in 419ms (Views: 365.1ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/wikis/new" for 108.12.50.178 at 2017-05-16 21:40:46 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered wikis/_form.html.erb (698.0ms)
+  Rendered wikis/new.html.erb within layouts/application (699.1ms)
+Completed 200 OK in 735ms (Views: 734.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/wikis" for 108.12.50.178 at 2017-05-16 21:41:01 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3jjVjeKay1AQtwilOQ2f3TrWBHjjHPaDaXeaz2cyKQV6UUT2y3Arr8UMe+WuXX+OSbEk3Ji539hpwPxSJGCKJA==", "wiki"=>{"title"=>"blah blah blah", "body"=>"blha blah blah blah blah blah "}, "commit"=>"Save"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis
+Completed 302 Found in 137164ms (ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 21:44:37 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.5ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (3.3ms)
+  Rendered wikis/index.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 407ms (Views: 351.5ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/wikis/new" for 108.12.50.178 at 2017-05-16 21:44:40 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered wikis/_form.html.erb (755.9ms)
+  Rendered wikis/new.html.erb within layouts/application (757.2ms)
+Completed 200 OK in 792ms (Views: 790.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/wikis" for 108.12.50.178 at 2017-05-16 21:44:52 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u8AasuS9uL6M6yUSsMm4Fpj4L0+yZXoixCUDxiz5l54fqYvJzVdYQVlQVlInmVhF658P68nAU3nEkmVbb6s0vw==", "wiki"=>{"title"=>"gliupp", "body"=>"asdfa asfas asdf asdf asdf asd fasd f"}, "commit"=>"Save"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis
+Completed 302 Found in 43143ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/wikis" for 108.12.50.178 at 2017-05-16 21:45:35 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.1ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.5ms)
+  Rendered wikis/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 21:46:45 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (2.1ms)
+  Rendered wikis/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 290ms (Views: 250.4ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/wikis/new" for 108.12.50.178 at 2017-05-16 21:46:48 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered wikis/_form.html.erb (622.7ms)
+  Rendered wikis/new.html.erb within layouts/application (624.1ms)
+Completed 200 OK in 662ms (Views: 661.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/wikis" for 108.12.50.178 at 2017-05-16 21:47:00 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"udWg4xouUlqcLkeUxKMDJD245L2v/DhSBFp25UBCfh0dvDGYM8SypUmVNNRT8+N3Tt/EGdRZEQkE7RB4AxDdPA==", "wiki"=>{"title"=>"Blah blah blah", "body"=>"blah blah blah blah blah "}, "commit"=>"Save"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "wikis" ("title", "body", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Blah blah blah"], ["body", "blah blah blah blah blah "], ["user_id", 8], ["created_at", "2017-05-16 21:47:00.856101"], ["updated_at", "2017-05-16 21:47:00.856101"]]
+  [1m[35m (9.0ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis/11
+Completed 302 Found in 113ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/wikis/11" for 108.12.50.178 at 2017-05-16 21:47:01 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  Rendered wikis/show.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 80ms (Views: 66.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/wikis" for 108.12.50.178 at 2017-05-16 21:47:24 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.4ms)
+  Rendered wikis/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 213ms (Views: 209.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/wikis/11" for 108.12.50.178 at 2017-05-16 21:47:27 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mWiki Load (0.2ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered wikis/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 46ms (Views: 44.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/charges/new" for 108.12.50.178 at 2017-05-16 21:47:35 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChargesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  Rendered charges/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 46ms (Views: 43.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/charges" for 108.12.50.178 at 2017-05-16 21:48:17 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChargesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uqBNQQ0De5jFhmQB8sB8f6fCJqDVkOF8xTgxPbrDm5Ieydw6JOmbZxA9F0FlkJws1KUGBK41yCfFj1eg+ZE4sw==", "stripeToken"=>"tok_1AKDWbFkgJ7JxetiXtqeLtcz", "stripeTokenType"=>"card", "stripeEmail"=>"member@example.com"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "role" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["role", 1], ["updated_at", "2017-05-16 21:48:18.159283"], ["id", 8]]
+  [1m[36m (8.6ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis
+Completed 302 Found in 1156ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/wikis" for 108.12.50.178 at 2017-05-16 21:48:18 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.3ms)
+  Rendered wikis/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 37ms (Views: 34.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/wikis/11" for 108.12.50.178 at 2017-05-16 21:48:20 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mWiki Load (0.2ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered wikis/show.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 161ms (Views: 159.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/wikis/11/edit" for 108.12.50.178 at 2017-05-16 21:48:23 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mWiki Load (0.1ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered wikis/_form.html.erb (9.0ms)
+  Rendered wikis/edit.html.erb within layouts/application (10.5ms)
+Completed 200 OK in 44ms (Views: 42.2ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/wikis/11" for 108.12.50.178 at 2017-05-16 21:48:30 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5dn4LjxNn7sEQRuiALsHbgPhTEaA75QS1J9OM7yqmBFBsGlVFad/RNH6aOKX6+c9cIZs4vtKvUnUKCiu//g7MA==", "wiki"=>{"title"=>"Blah blah blah", "body"=>"blah blah blah blah blah ", "private"=>"1"}, "commit"=>"Save", "id"=>"11"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "wikis" SET "private" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["private", "t"], ["updated_at", "2017-05-16 21:48:30.855405"], ["id", 11]]
+  [1m[35m (10.1ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis/11
+Completed 302 Found in 94ms (ActiveRecord: 11.0ms)
+
+
+Started GET "/wikis/11" for 108.12.50.178 at 2017-05-16 21:48:31 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  Rendered wikis/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 50ms (Views: 48.5ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/users/sign_out" for 108.12.50.178 at 2017-05-16 21:48:41 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DBExVlTksUt/43Xr46CEvOblPUvRMTHr8CtoS3TAVSGoeKAtfQ5RtKpYBqt08GTvlYId76qUGLDwnA7WN5L2AA=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 11ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 21:48:41 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.8ms)
+  Rendered wikis/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 57ms (Views: 50.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_up" for 108.12.50.178 at 2017-05-16 21:48:51 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (10.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (27.6ms)
+Completed 200 OK in 188ms (Views: 186.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 108.12.50.178 at 2017-05-16 21:49:15 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lfmyX7behDAm1yI+O9sWpFA0oznWFGVEo8EOPf/vCruYb1HgyvicNH8+8GrgCrF42MDuK5dEN96SCuAzMj0fHA==", "user"=>{"email"=>"member2@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.3ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'member2@example.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["email", "member2@example.com"], ["encrypted_password", "$2a$11$.TriFrutxGS8f6PgfVLtKOc1oRCQWU4l/UWnLz6ws9Hs47ViJ/8sy"], ["role", 0], ["created_at", "2017-05-16 21:49:15.585215"], ["updated_at", "2017-05-16 21:49:15.585215"], ["confirmation_token", "GsGouTS9jYN-aT5Gixz-"], ["confirmation_sent_at", "2017-05-16 21:49:15.585927"]]
+  [1m[36m (16.7ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (6.4ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 286.2ms
+
+Sent mail to member2@example.com (354.9ms)
+Date: Tue, 16 May 2017 21:49:15 +0000
+From: stevendaryl3016@example.com
+Reply-To: stevendaryl3016@yahoo.com
+To: member2@example.com
+Message-ID: <591b73dbe1609_5aa3f99265a5e70277ad@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome member2@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://blocipedia-darylmcc.c9users.io//users/confirmation?confirmation_token=GsGouTS9jYN-aT5Gixz-">Confirm my account</a></p>
+
+Completed 500 Internal Server Error in 998ms (ActiveRecord: 17.5ms)
+
+Net::SMTPAuthenticationError (535 Authentication failed: account disabled
+):
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/smtp.rb:977:in `check_auth_response'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/smtp.rb:741:in `auth_plain'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/smtp.rb:733:in `authenticate'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/smtp.rb:568:in `do_start'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/smtp.rb:521:in `start'
+  mail (2.6.4) lib/mail/network/delivery_methods/smtp.rb:113:in `deliver!'
+  mail (2.6.4) lib/mail/message.rb:2149:in `do_delivery'
+  mail (2.6.4) lib/mail/message.rb:237:in `block in deliver'
+  actionmailer (4.2.5) lib/action_mailer/base.rb:543:in `block in deliver_mail'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionmailer (4.2.5) lib/action_mailer/base.rb:541:in `deliver_mail'
+  mail (2.6.4) lib/mail/message.rb:237:in `deliver'
+  actionmailer (4.2.5) lib/action_mailer/message_delivery.rb:85:in `deliver_now'
+  devise (4.2.1) lib/devise/models/authenticatable.rb:191:in `send_devise_notification'
+  devise (4.2.1) lib/devise/models/confirmable.rb:119:in `send_confirmation_instructions'
+  devise (4.2.1) lib/devise/models/confirmable.rb:181:in `send_on_create_confirmation_instructions'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:253:in `block in conditional'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_commit_callbacks'
+  activerecord (4.2.5) lib/active_record/transactions.rb:314:in `committed!'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:89:in `commit_records'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:153:in `commit'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:175:in `commit_transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:194:in `within_new_transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.5) lib/active_record/transactions.rb:285:in `save'
+  devise (4.2.1) app/controllers/devise/registrations_controller.rb:17:in `create'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (45.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users"  ORDER BY "users"."id" DESC LIMIT 1
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "confirmed_at" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["confirmed_at", "2017-05-16 21:50:40.729731"], ["updated_at", "2017-05-16 21:50:40.731331"], ["id", 9]]
+  [1m[36m (10.3ms)[0m  [1mcommit transaction[0m
+
+
+Started GET "/wikis" for 108.12.50.178 at 2017-05-16 21:51:20 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.3ms)[0m  SELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.9ms)
+  Rendered wikis/index.html.erb within layouts/application (18.1ms)
+Completed 200 OK in 411ms (Views: 376.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/charges.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for 108.12.50.178 at 2017-05-16 21:51:21 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/wikis.self-cd41dec80fd3ae8165ce88df5cede8f793ea516462cf3f2da292085df71dd7da.css?body=1" for 108.12.50.178 at 2017-05-16 21:51:21 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-0de2d689dc29435fb4c628bfb202a4d73416335abdb70a48319d1cdcb22a4a99.css?body=1" for 108.12.50.178 at 2017-05-16 21:51:21 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3d2b1085db6945c1ed2965f6b9561bfd4c3d4bfd17596a955c1ce8b4068f6b3f.css?body=1" for 108.12.50.178 at 2017-05-16 21:51:21 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" for 108.12.50.178 at 2017-05-16 21:51:21 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1" for 108.12.50.178 at 2017-05-16 21:51:21 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 108.12.50.178 at 2017-05-16 21:51:21 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 108.12.50.178 at 2017-05-16 21:51:21 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 108.12.50.178 at 2017-05-16 21:51:21 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/wikis.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 108.12.50.178 at 2017-05-16 21:51:21 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for 108.12.50.178 at 2017-05-16 21:51:21 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/users/sign_in" for 108.12.50.178 at 2017-05-16 21:51:24 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (17.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (711.4ms)
+Completed 200 OK in 805ms (Views: 751.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/sign_in" for 108.12.50.178 at 2017-05-16 21:51:38 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1ZXNnJFj4IfSyWsiOOnHqT/kqDTPP9HVNe47elqROEXYAy4j7UX4g4sguXbjOGB1txDlJo5vg08EJdV0l0Mt4g==", "user"=>{"email"=>"member2@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "member2@example.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2017-05-16 21:51:39.094320"], ["current_sign_in_at", "2017-05-16 21:51:39.094320"], ["last_sign_in_ip", "108.12.50.178"], ["current_sign_in_ip", "108.12.50.178"], ["sign_in_count", 1], ["updated_at", "2017-05-16 21:51:39.095665"], ["id", 9]]
+  [1m[35m (9.1ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 176ms (ActiveRecord: 9.9ms)
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 21:51:39 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35mWiki Load (0.2ms)[0m  SELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.4ms)
+  Rendered wikis/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/users/sign_out" for 108.12.50.178 at 2017-05-16 21:51:51 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Tcwy/2mpOT5q+q7hB/kx+BVh2eNOdHk0JsiDt5BB/8TKk/fPSPgDxRkC4zKanHa3NPJdCKOnvPPzn1AcCdbBDQ=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 9]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 21:51:52 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mWiki Load (0.2ms)[0m  SELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.1ms)
+  Rendered wikis/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/sign_up" for 108.12.50.178 at 2017-05-16 21:51:57 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.0ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 53ms (Views: 51.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 108.12.50.178 at 2017-05-16 21:52:19 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WI1rSW5OIhiAFQIKXZqQwuFXqB2nQabFCw6TcmgkisZupJjQHM6/gDjqsXhUv5WJSvoUCZeJ00iAHFiNFDMcEg==", "user"=>{"email"=>"member3@example.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mUser Exists (0.2ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'member3@example.com' LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "member3@example.com"], ["encrypted_password", "$2a$11$KY/O1RS64gDsHzZ.98r8vO3uPZQ5z02XBb5VLqd3JnMk.UAvmhkWC"], ["role", 0], ["created_at", "2017-05-16 21:52:20.169406"], ["updated_at", "2017-05-16 21:52:20.169406"], ["confirmation_token", "xfvMXTJCCmAATXrXGPsv"], ["confirmation_sent_at", "2017-05-16 21:52:20.169745"]]
+  [1m[35m (11.7ms)[0m  commit transaction
+  Rendered devise/mailer/confirmation_instructions.html.erb (5.5ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 211.6ms
+
+Sent mail to member3@example.com (314.4ms)
+Date: Tue, 16 May 2017 21:52:20 +0000
+From: stevendaryl3016@example.com
+Reply-To: stevendaryl3016@yahoo.com
+To: member3@example.com
+Message-ID: <591b749465eac_5e93f8c8f184d80306f1@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome member3@example.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://blocipedia-darylmcc.c9users.io//users/confirmation?confirmation_token=xfvMXTJCCmAATXrXGPsv">Confirm my account</a></p>
+
+Completed 500 Internal Server Error in 723ms (ActiveRecord: 12.3ms)
+
+Net::SMTPAuthenticationError (535 Authentication failed: account disabled
+):
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/smtp.rb:977:in `check_auth_response'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/smtp.rb:741:in `auth_plain'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/smtp.rb:733:in `authenticate'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/smtp.rb:568:in `do_start'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/smtp.rb:521:in `start'
+  mail (2.6.4) lib/mail/network/delivery_methods/smtp.rb:113:in `deliver!'
+  mail (2.6.4) lib/mail/message.rb:2149:in `do_delivery'
+  mail (2.6.4) lib/mail/message.rb:237:in `block in deliver'
+  actionmailer (4.2.5) lib/action_mailer/base.rb:543:in `block in deliver_mail'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionmailer (4.2.5) lib/action_mailer/base.rb:541:in `deliver_mail'
+  mail (2.6.4) lib/mail/message.rb:237:in `deliver'
+  actionmailer (4.2.5) lib/action_mailer/message_delivery.rb:85:in `deliver_now'
+  devise (4.2.1) lib/devise/models/authenticatable.rb:191:in `send_devise_notification'
+  devise (4.2.1) lib/devise/models/confirmable.rb:119:in `send_confirmation_instructions'
+  devise (4.2.1) lib/devise/models/confirmable.rb:181:in `send_on_create_confirmation_instructions'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:253:in `block in conditional'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_commit_callbacks'
+  activerecord (4.2.5) lib/active_record/transactions.rb:314:in `committed!'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:89:in `commit_records'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:153:in `commit'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:175:in `commit_transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:194:in `within_new_transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.5) lib/active_record/transactions.rb:285:in `save'
+  devise (4.2.1) app/controllers/devise/registrations_controller.rb:17:in `create'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (36.9ms)
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 21:54:32 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.7ms)
+  Rendered wikis/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_in" for 108.12.50.178 at 2017-05-16 21:54:35 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.html.erb (6.7ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 52ms (Views: 49.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for 108.12.50.178 at 2017-05-16 21:54:47 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"U9sCfbrSY4pCo8W3hh+URPfpgCY8buTK3m35flHKbBpl8vHkyFL+EvpcdsWPOpEPXEQ8MgymkUdVfzKBLd36zg==", "user"=>{"email"=>"member@example.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "member@example.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2017-05-16 21:54:47.306120"], ["sign_in_count", 2], ["updated_at", "2017-05-16 21:54:47.307937"], ["id", 8]]
+  [1m[36m (11.1ms)[0m  [1mcommit transaction[0m
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 190ms (ActiveRecord: 11.8ms)
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 21:54:47 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (1.6ms)
+  Rendered wikis/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 43ms (Views: 40.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/wikis/11" for 108.12.50.178 at 2017-05-16 21:54:54 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mWiki Load (0.2ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (1.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered wikis/show.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 62ms (Views: 57.1ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/wikis/11/edit" for 108.12.50.178 at 2017-05-16 21:54:57 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered wikis/_form.html.erb (7.7ms)
+  Rendered wikis/edit.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/users/8/downgrade" for 108.12.50.178 at 2017-05-16 21:55:07 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChargesController#downgrade as HTML
+  Parameters: {"authenticity_token"=>"aQCJMAATwfcJYncmGfAKBSqg4W3ddSQjrpUZcw7kWUHSJnCvQcKlZNGPz/0qs4nZQNVbcKobKeqVqxDaqLwrFg==", "id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "role" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["role", 0], ["updated_at", "2017-05-16 21:55:07.296819"], ["id", 8]]
+  [1m[35m (7.9ms)[0m  commit transaction
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."user_id" = ?[0m  [["user_id", 8]]
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis
+Completed 302 Found in 26ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/wikis" for 108.12.50.178 at 2017-05-16 21:55:07 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.4ms)
+  Rendered wikis/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 42ms (Views: 39.3ms | ActiveRecord: 0.4ms)
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis"  ORDER BY "wikis"."id" DESC LIMIT 1[0m
+  [1m[36mUser Load (10.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "role" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["role", 1], ["updated_at", "2017-05-16 21:57:40.272645"], ["id", 8]]
+  [1m[35m (11.6ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 21:57:56 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.5ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (3.5ms)
+  Rendered wikis/index.html.erb within layouts/application (20.6ms)
+Completed 200 OK in 465ms (Views: 417.4ms | ActiveRecord: 1.9ms)
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35mWiki Load (0.4ms)[0m  SELECT "wikis".* FROM "wikis" WHERE "wikis"."user_id" = ?  [["user_id", 8]]
+  [1m[36mUser Load (2.8ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "role" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["role", 0], ["updated_at", "2017-05-16 21:59:30.872586"], ["id", 8]]
+  [1m[35m (12.5ms)[0m  commit transaction
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."user_id" = ?[0m  [["user_id", 8]]
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 21:59:46 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.4ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (2.6ms)
+  Rendered wikis/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 315ms (Views: 267.5ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 22:01:55 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (1.9ms)
+  Rendered wikis/index.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 296ms (Views: 248.2ms | ActiveRecord: 1.7ms)
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis"  ORDER BY "wikis"."id" DESC LIMIT 1[0m
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "role" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["role", 1], ["updated_at", "2017-05-16 22:04:04.536771"], ["id", 8]]
+  [1m[35m (15.8ms)[0m  commit transaction
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 22:04:20 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT "wikis".* FROM "wikis"[0m
+  Rendered wikis/_wiki.html.erb (2.0ms)
+  Rendered wikis/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 252ms (Views: 216.4ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/wikis/11" for 108.12.50.178 at 2017-05-16 22:04:25 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mWiki Load (0.3ms)[0m  SELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered wikis/show.html.erb within layouts/application (638.5ms)
+Completed 200 OK in 677ms (Views: 671.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/wikis/11/edit" for 108.12.50.178 at 2017-05-16 22:04:28 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#edit as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  Rendered wikis/_form.html.erb (29.0ms)
+  Rendered wikis/edit.html.erb within layouts/application (30.1ms)
+Completed 200 OK in 62ms (Views: 60.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/users/8/downgrade" for 108.12.50.178 at 2017-05-16 22:04:38 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by ChargesController#downgrade as HTML
+  Parameters: {"authenticity_token"=>"TEnAyr+CDcCXNGxmFQcY4dwybQUd/VDzZCCMlHJ9G9r3bzlV/lNpU0/Z1L0mRJs9tkfXGGqTXTpfHoU91CVpjQ==", "id"=>"8"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "role" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["role", 0], ["updated_at", "2017-05-16 22:04:38.851047"], ["id", 8]]
+  [1m[35m (11.1ms)[0m  commit transaction
+  [1m[36mWiki Load (0.4ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."user_id" = ?[0m  [["user_id", 8]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "wikis" SET "private" = ?, "updated_at" = ? WHERE "wikis"."id" = ?[0m  [["private", "f"], ["updated_at", "2017-05-16 22:04:38.879905"], ["id", 11]]
+  [1m[35m (11.7ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/wikis
+Completed 302 Found in 47ms (ActiveRecord: 24.3ms)
+
+
+Started GET "/wikis" for 108.12.50.178 at 2017-05-16 22:04:39 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  [1m[35mWiki Load (0.4ms)[0m  SELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (2.1ms)
+  Rendered wikis/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 41ms (Views: 37.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/wikis/11" for 108.12.50.178 at 2017-05-16 22:04:50 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mWiki Load (0.2ms)[0m  [1mSELECT  "wikis".* FROM "wikis" WHERE "wikis"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 8]]
+  Rendered wikis/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 45ms (Views: 43.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 22:15:13 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WikisController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36mWiki Load (0.4ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (2.8ms)
+  Rendered wikis/index.html.erb within layouts/application (16.3ms)
+Completed 200 OK in 352ms (Views: 302.8ms | ActiveRecord: 1.7ms)
+
+
+Started DELETE "/users/sign_out" for 108.12.50.178 at 2017-05-16 22:15:21 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"po8cThnScSlwcprwZEVWWF7oo2khTktyg4fzawxuhusdqeXRWAMVuqifIitXBtWENJ0ZdFYgRru4ufrCqjb0vA=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 8]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to https://blocipedia-darylmcc.c9users.io/
+Completed 302 Found in 783ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 108.12.50.178 at 2017-05-16 22:15:24 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by WikisController#index as HTML
+  [1m[36mWiki Load (0.3ms)[0m  [1mSELECT "wikis".* FROM "wikis" WHERE "wikis"."private" = ?[0m  [["private", "f"]]
+  Rendered wikis/_wiki.html.erb (2.2ms)
+  Rendered wikis/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 52ms (Views: 44.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/sign_up" for 108.12.50.178 at 2017-05-16 22:15:41 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered devise/shared/_links.html.erb (13.7ms)
+  Rendered devise/registrations/new.html.erb within layouts/application (50.9ms)
+Completed 200 OK in 101ms (Views: 98.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for 108.12.50.178 at 2017-05-16 22:16:09 +0000
+Cannot render console from 108.12.50.178! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s6V4NVF9GRPc1z310sZfIfIjnE+gXJIbAVYMDzd8ODYBMqU5osPzWc7pr8IO/WUif0fydEwBWUJMtkMA3cCh0Q==", "user"=>{"email"=>"stevendaryl3016@yahoo.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'stevendaryl3016@yahoo.com' LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "role", "created_at", "updated_at", "confirmation_token", "confirmation_sent_at") VALUES (?, ?, ?, ?, ?, ?, ?)  [["email", "stevendaryl3016@yahoo.com"], ["encrypted_password", "$2a$11$8fh/TW8DB39admA.vKC9/uqUR9jfVlP/D3frHrcKp9BsENRxZfI5u"], ["role", 0], ["created_at", "2017-05-16 22:16:09.354697"], ["updated_at", "2017-05-16 22:16:09.354697"], ["confirmation_token", "aKXGx_KfDMDKxqc_sxyN"], ["confirmation_sent_at", "2017-05-16 22:16:09.355389"]]
+  [1m[36m (13.7ms)[0m  [1mcommit transaction[0m
+  Rendered devise/mailer/confirmation_instructions.html.erb (6.9ms)
+
+Devise::Mailer#confirmation_instructions: processed outbound mail in 199.3ms
+
+Sent mail to stevendaryl3016@yahoo.com (356.8ms)
+Date: Tue, 16 May 2017 22:16:09 +0000
+From: stevendaryl3016@example.com
+Reply-To: stevendaryl3016@yahoo.com
+To: stevendaryl3016@yahoo.com
+Message-ID: <591b7a29920b8_6e13ffba9ca558c508f9@darylmcc-blocipedia-4795177.mail>
+Subject: Confirmation instructions
+Mime-Version: 1.0
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<p>Welcome stevendaryl3016@yahoo.com!</p>
+
+<p>You can confirm your account email through the link below:</p>
+
+<p><a href="https://blocipedia-darylmcc.c9users.io//users/confirmation?confirmation_token=aKXGx_KfDMDKxqc_sxyN">Confirm my account</a></p>
+
+Completed 500 Internal Server Error in 766ms (ActiveRecord: 14.4ms)
+
+Net::SMTPAuthenticationError (535 Authentication failed: account disabled
+):
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/smtp.rb:977:in `check_auth_response'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/smtp.rb:741:in `auth_plain'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/smtp.rb:733:in `authenticate'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/smtp.rb:568:in `do_start'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/net/smtp.rb:521:in `start'
+  mail (2.6.4) lib/mail/network/delivery_methods/smtp.rb:113:in `deliver!'
+  mail (2.6.4) lib/mail/message.rb:2149:in `do_delivery'
+  mail (2.6.4) lib/mail/message.rb:237:in `block in deliver'
+  actionmailer (4.2.5) lib/action_mailer/base.rb:543:in `block in deliver_mail'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionmailer (4.2.5) lib/action_mailer/base.rb:541:in `deliver_mail'
+  mail (2.6.4) lib/mail/message.rb:237:in `deliver'
+  actionmailer (4.2.5) lib/action_mailer/message_delivery.rb:85:in `deliver_now'
+  devise (4.2.1) lib/devise/models/authenticatable.rb:191:in `send_devise_notification'
+  devise (4.2.1) lib/devise/models/confirmable.rb:119:in `send_confirmation_instructions'
+  devise (4.2.1) lib/devise/models/confirmable.rb:181:in `send_on_create_confirmation_instructions'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:432:in `block in make_lambda'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:253:in `block in conditional'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `each'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:506:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_commit_callbacks'
+  activerecord (4.2.5) lib/active_record/transactions.rb:314:in `committed!'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:89:in `commit_records'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:153:in `commit'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:175:in `commit_transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/transaction.rb:194:in `within_new_transaction'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/database_statements.rb:213:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:220:in `transaction'
+  activerecord (4.2.5) lib/active_record/transactions.rb:348:in `with_transaction_returning_status'
+  activerecord (4.2.5) lib/active_record/transactions.rb:286:in `block in save'
+  activerecord (4.2.5) lib/active_record/transactions.rb:301:in `rollback_active_record_state!'
+  activerecord (4.2.5) lib/active_record/transactions.rb:285:in `save'
+  devise (4.2.1) app/controllers/devise/registrations_controller.rb:17:in `create'
+  actionpack (4.2.5) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:92:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_process_action_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.5) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.5) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.5) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.5) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.5) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.5) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.5) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.5) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.5) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:76:in `dispatch'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:45:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/mapper.rb:49:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.5) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.5) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+  warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+  warden (1.2.7) lib/warden/manager.rb:35:in `call'
+  rack (1.6.5) lib/rack/etag.rb:24:in `call'
+  rack (1.6.5) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.5) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.5) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.5) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.5) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.5) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.5) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:20:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.5) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.5) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.5) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.5) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.5) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.5) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.5) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.5) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.5) lib/rails/engine.rb:518:in `call'
+  railties (4.2.5) lib/rails/application.rb:165:in `call'
+  rack (1.6.5) lib/rack/lock.rb:17:in `call'
+  rack (1.6.5) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.5) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /usr/local/rvm/rubies/ruby-2.3.0/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.3.0/gems/actionpack-4.2.5/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (27.3ms)
