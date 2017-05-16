@@ -4,10 +4,4 @@ class Wiki < ActiveRecord::Base
     validates :body, length: { minimum: 20 }, presence: true
     validates :user, presence: true
     
-    after_initialize :init
-
-    
-    def init
-        self.private ||= false
-    end
 end
