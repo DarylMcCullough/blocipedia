@@ -13,21 +13,23 @@ class WikisController < ApplicationController
 
   def new
     @wiki = Wiki.new
+    begin
+        authorize @wiki
+    rescue
+        flash[:alert] = "You must be logged in to create a Wiki."
+        redirect_to @wiki
+        return
+    end
   end
   
   def create
       
     @wiki = Wiki.new(wiki_params)
-
     @wiki.user = current_user
-      
+
     begin
          authorize @wiki
      rescue => error
-        puts "in here..."
-        binding.pry
-        puts error.message
-        
         if ! current_user.present?
             alert = "You must be logged in to create a wiki"
         elsif current_user.standard? && @wiki.private
@@ -48,8 +50,15 @@ class WikisController < ApplicationController
      end
    end
 
-  def edit
-      @wiki = Wiki.find(params[:id])
+    def edit
+        @wiki = Wiki.find(params[:id])
+        begin
+            authorize @wiki
+        rescue
+            flash[:alert] = "You must be logged in to edit this Wiki."
+            redirect_to action: :index
+            return
+        end
   end
   
   def update

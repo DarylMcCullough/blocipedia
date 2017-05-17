@@ -11,6 +11,14 @@ class WikiPolicy < ApplicationPolicy
     user.present?
   end
   
+  def edit?
+    user.present?
+  end
+  
+  def new?
+    user.present?
+  end
+  
   def create? # user must be logged in to create a wiki
     if ! user.present?
       return false

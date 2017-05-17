@@ -35,7 +35,7 @@ RSpec.describe User, type: :model do
          puts "wiki.private: #{wiki.private}"
          wiki.user.downgrade
          puts "now, in spec, wiki.id: #{wiki.id}, wiki.private: #{wiki.private}"
-         
+         wiki.reload
          expect(wiki.private).to eq(false)
      end
    end
