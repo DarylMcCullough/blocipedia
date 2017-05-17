@@ -17,11 +17,16 @@ class User < ActiveRecord::Base
   
   def downgrade
     if self.premium?
+      puts "in downgrade"
       self.standard!
       self.wikis.each do |wiki|
+        puts "wiki-id: #{wiki.id}"
         wiki.private = false
         wiki.save!
+        puts "wiki.private: #{wiki.private}"
+
       end
+      
     end
     
   end
