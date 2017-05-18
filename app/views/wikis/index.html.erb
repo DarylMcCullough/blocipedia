@@ -1,6 +1,6 @@
 <h1>Welcome to <span class="app-title">Blocipedia</span></h1>
 
-<% if user_signed_in? %>
+<% if current_user.present? %>
    Explore the pages. Create your own.
    <% else %>
    <div class="signup-instructions">Signup or login to create your own wiki or read what others have created...</div>
@@ -13,7 +13,7 @@
   <%= render @wikis %>
 
    </div>
-      <% if user_is_authorized_for_wikis? %>
+      <% if current_user.present? %>
      <div class="col-md-4">
        <%= link_to "New Wiki", new_wiki_path, class: 'btn btn-success' %>
      </div>
