@@ -55,6 +55,12 @@ class WikisController < ApplicationController
             render :show
         end
     end
+    
+    def render_stuff
+        renderer = Redcarpet::Render::HTML.new(render_options = {})
+        markdown = Redcarpet::Markdown.new(renderer, extensions = {})
+        markdown.render("This is *bongos*, indeed.")
+    end
   
     private
  
