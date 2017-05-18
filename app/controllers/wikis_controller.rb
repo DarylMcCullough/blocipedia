@@ -55,7 +55,7 @@ class WikisController < ApplicationController
             render :show
         end
     end
-  
+
     private
  
     def wiki_params
