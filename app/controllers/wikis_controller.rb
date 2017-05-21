@@ -5,6 +5,7 @@ class WikisController < ApplicationController
 
     def show
         @wiki = Wiki.find(params[:id])
+        @collaborator = Collaborator.new
     end
 
     def new

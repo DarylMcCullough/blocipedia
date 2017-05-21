@@ -9,4 +9,7 @@ class Wiki < ActiveRecord::Base
         collaborators.users
     end
     
+    def collaborating_user_ids
+        collaborating_users.map { |user| user.id }
+    end
 end
