@@ -14,4 +14,10 @@
  *= require_self
  */
  @import "bootstrap-sprockets";
+ @import "bootswatch/yeti/variables";
  @import "bootstrap";
+ @import "bootswatch/yeti/bootswatch";
+ 
+ body {
+  background-color: wheat;
+ }

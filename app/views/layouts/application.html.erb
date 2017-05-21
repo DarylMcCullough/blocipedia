@@ -7,25 +7,32 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+    <div class="container">
+        
+             <ul class="nav nav-tabs">
+       <li><%= link_to "Blocipedia Home", wikis_path, :class => 'navbar-link'  %></li>
+        <div class="pull-right user-info">
+            <% if user_signed_in? %>
+                <% if current_user.premium? %>
+                    Premium member: <strong><%= current_user.email %></strong> |
+                   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> 
+                   - <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+                   - <%= link_to "Drop Premium Membership", downgrade_user_path(current_user), method: :post, data: { confirm: 'Are you sure you want to drop your premium membership?' } %>
+                <% else %>
+                   Signed in as: <strong><%= current_user.email %></strong> |
+                   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> 
+                   - <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
+                   - <%= link_to "Upgrade to Premium", new_charge_path, :class => 'navbar-link'  %>
+                <% end %>
+            <% else %>
+               <%= link_to "Sign Up", new_user_registration_path, :class => 'navbar-link'  %> -
+               <%= link_to "Sign In", new_user_session_path, :class => 'navbar-link'  %>
+            <% end %>
+        </div>
+   </ul>
     
-    <%= link_to "Blocipedia Home", wikis_path, :class => 'navbar-link'  %> -
-  
- <% if user_signed_in? %>
- <% if current_user.premium? %>
-    Premium member: <strong><%= current_user.email %></strong> |
-   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> 
-   - <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-   - <%= link_to "Drop Premium Membership", downgrade_user_path(current_user), method: :post, data: { confirm: 'Are you sure you want to drop your premium membership?' } %>
- <% else %>
-   Signed in as: <strong><%= current_user.email %></strong> |
-   <%= link_to 'Edit profile', edit_user_registration_path, :class => 'navbar-link' %> 
-   - <%= link_to "Sign Out", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
-   - <%= link_to "Upgrade to Premium", new_charge_path, :class => 'navbar-link'  %>
-   <% end %>
- <% else %>
-   <%= link_to "Sign Up", new_user_registration_path, :class => 'navbar-link'  %> -
-   <%= link_to "Sign In", new_user_session_path, :class => 'navbar-link'  %>
- <% end %>
+
+
  
     <% if flash[:notice] %>
        <div class="alert alert-success">
@@ -39,7 +46,7 @@
        </div>
     <% end %>
 
-<div class="container">
+
     <%= yield %>    
 </div>
 
