@@ -5,11 +5,11 @@ class Wiki < ActiveRecord::Base
     validates :body, length: { minimum: 20 }, presence: true
     validates :user, presence: true
 
-    def collaborating_users
-        collaborators.users
-    end
-    
-    def collaborating_user_ids
-        collaborating_users.map { |user| user.id }
+    def collaborating_users(current_user)
+      possible_collaborators = User.all.where.not(id: current_user.id)
+      # Does this wiki already have collaborators
+      already_taken = self.collaborators.map{ |collaborator| User.find_by_id(collaborator.user_id)}
+      # Subtract the possible collaborators from the ones already chosenx
+      possible_collaborators - already_taken
     end
 end

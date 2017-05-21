@@ -6,7 +6,7 @@
    </small>
   </h1>
  </div>
- 
+
  <div class="row">
   <div class="col-md-8">
    <p><%= render_markdown(@wiki.body) %></p>
@@ -21,23 +21,11 @@
    </div>
   <% end %>
  </div>
- 
-  <div>
-   <h3>Collaborators</h3>
-  
- 
-<%= form_for [@wiki, @collaborator] do |f| %>
-  <ul>
-  <%= collection_check_boxes(:wiki, :collaborating_user_ids, User.all, :id, :email) do |b| %>
-   <li>
-    <%= b.check_box %>
-    <%= b.label %>
-</li>
-   <% end %>
-  </ul>
- <input id="wiki" name="wiki" type="hidden" value="<%= @wiki.id %>" />
-<div class="form-group">
-     <%= f.submit "Save", class: 'btn btn-success' %>
-   </div>
- <% end %>
- </div>
+
+<div>
+<h3>Collaborators</h3>
+
+<%= form_for [@wiki, Collaborator.new] do |f| %>
+  <%= f.select(:user_id, @all_collaborators.collect {|w| [w.email, w.id]}) %>
+  <%= f.submit %>
+<% end %>
