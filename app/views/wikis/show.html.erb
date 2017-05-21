@@ -1,24 +1,32 @@
  <div>
-   <h1>
-     <%= @wiki.title %> <br>
-     <small>
-       submitted <%= time_ago_in_words(@wiki.created_at) %> ago by <%= @wiki.user.email %>
-     </small>
-   </h1>
+  <h1>
+   <%= @wiki.title %> <br>
+   <small>
+    submitted <%= time_ago_in_words(@wiki.created_at) %> ago by <%= @wiki.user.email %>
+   </small>
+  </h1>
  </div>
  
  <div class="row">
-   <div class="col-md-8">
-     <p><%= render_markdown(@wiki.body) %></p>
-      
+  <div class="col-md-8">
+   <p><%= render_markdown(@wiki.body) %></p>
+  </div>
+
+  <% if current_user.present? %>
+   <div class="col-md-4">
+    <%= link_to "Edit Wiki", edit_wiki_path, class: 'btn btn-success' %>
+    <% if current_user.admin? %>
+     <%= link_to "Delete Wiki", @wiki, method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure you want to delete this wiki?' } %>
+    <% end %>
    </div>
-   <% if current_user.present? %>
-     <div class="col-md-4">
-       <%= link_to "Edit Wiki", edit_wiki_path, class: 'btn btn-success' %>
-       <% if current_user.admin? %>
-        <%= link_to "Delete Wiki", @wiki, method: :delete, class: 'btn btn-danger', data: { confirm: 'Are you sure you want to delete this wiki?' } %>
-        <% end %>
-     </div>
-   <% end %> </div>
-   
+  <% end %>
  </div>
+ 
+ <% if any_collaborators(@wiki) %>
+  <div>
+   <h3>Collaborators</h3>
+   <ul class="collaborators-list">
+   <%= render @wiki.collaborators %>
+   </ul>
+  </div>
+ <% end %>
