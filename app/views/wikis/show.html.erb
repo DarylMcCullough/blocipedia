@@ -28,13 +28,21 @@
  
 <%= form_for [@wiki, @collaborator] do |f| %>
   <ul>
-  <%= collection_check_boxes(:wiki, :collaborating_user_ids, User.all, :id, :email) do |b| %>
-   <li>
-    <%= b.check_box %>
-    <%= b.label %>
-</li>
-   <% end %>
-  </ul>
+   
+   <ul>
+   <% n = User.all.length %>
+  <% (1..n).each do |i| %>
+  <% user = User.all[i-1] %>
+  <% email = user.email %>
+  <% label = "collaborator_#{i}" %>
+  <% value = i %>
+
+  <li>
+	    <input type="checkbox" id="<%= label %>" name="<%= label %>" value="<%= value %>">
+    <label for="subscribeNews"><%= email %></label>
+	</li>
+     <% end %>
+</ul>
  <input id="wiki" name="wiki" type="hidden" value="<%= @wiki.id %>" />
 <div class="form-group">
      <%= f.submit "Save", class: 'btn btn-success' %>
