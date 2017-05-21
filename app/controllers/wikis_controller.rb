@@ -5,9 +5,11 @@ class WikisController < ApplicationController
 
     def show
         @wiki = Wiki.find(params[:id])
+        authorize @wiki
         @collaborator = Collaborator.new
+        
         # grab the IDs of the User needed for the dropdown
-        @all_collaborators = @wiki.collaborating_users(current_user)
+        @possible_collaborators = @wiki.possible_collaborators(current_user)
     end
 
     def new

@@ -23,18 +23,20 @@
  </div>
 <div>
  
- <% if any_collaborators(@wiki) %>
-  <h3>Collaborators</h3>
-    <ul class="collaborators-list">
-     <%= render @wiki.collaborators %>
-    </ul>
-<% end %>
+ <% if @wiki.private %>
+  <% if any_collaborators(@wiki) %>
+   <h3>Collaborators</h3>
+   <ul class="collaborators-list">
+    <%= render @wiki.collaborators %>
+   </ul>
+  <% end %>
 
-<% if current_user == @wiki.user %>
- <h4>Add Collaborators</h4>
+  <% if current_user == @wiki.user %>
+   <h4>Add Collaborators</h4>
   
- <%= form_for [@wiki, Collaborator.new] do |f| %>
-   <%= f.collection_select(:user_id, @wiki.collaborating_users, :id, :email, {}, {:prompt => true, :multiple => true}) %>
-   <%= f.submit %>
- <% end %>
+   <%= form_for [@wiki, Collaborator.new] do |f| %>
+    <%= f.collection_select(:user_id,  @possible_collaborators, :id, :email, {}, {:prompt => true, :multiple => true}) %>
+    <%= f.submit 'Add Collaborator(s)' %>
+   <% end %>
+  <% end %>
  <% end %>

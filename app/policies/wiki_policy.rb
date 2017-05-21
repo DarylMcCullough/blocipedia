@@ -2,22 +2,25 @@ class WikiPolicy < ApplicationPolicy
   
   attr_reader :user, :wiki
   
-  class Scope < Scope
-    attr_reader :user, :scope
-
-    def initialize(user, scope)
-      @user  = user
-      @scope = scope
-    end
-
-    def resolve
-      if user.present? && (user.admin? || user.premium?)
-        scope.all
-      else
-        scope.where(private: false)
+    def self.can_access(user, wiki)
+      if ! user.present?
+        return false
       end
+    
+      if user.admin?
+        return true
+      end
+      
+      if wiki.user == user
+        return true
+      end
+
+      if wiki.private
+        return wiki.collaborating_users.include?(user)
+      end
+      return true
     end
-  end
+
   
   def initialize(user, wiki)
     @user = user
@@ -25,15 +28,19 @@ class WikiPolicy < ApplicationPolicy
   end
   
   def update? # user must be logged in to update a wiki
-    user.present?
+    WikiPolicy.can_access(user,wiki)
   end
   
   def edit? # user must be logged in to edit a wiki
-    user.present?
+    WikiPolicy.can_access(user,wiki)
   end
   
   def new? # user must be logged in to create a wiki
-    user.present?
+    WikiPolicy.can_access(user,wiki)
+  end
+  
+  def show?
+    WikiPolicy.can_access(user,wiki)
   end
   
   def destroy?
@@ -41,10 +48,25 @@ class WikiPolicy < ApplicationPolicy
   end
   
   def create?
-    if ! user.present?  # user must be logged in to create a wiki
+    if ! WikiPolicy.can_access(user,wiki)
       return false
     end
+
     # only admins and premium users can create private wikis
     (! wiki.private) || user.admin? || user.premium?
   end
+  
+  class Scope < Scope
+    attr_reader :user, :scope
+
+    def initialize(user, scope)
+      @user  = user
+      @scope = scope
+    end
+    
+    def resolve
+        scope.select{ |wiki| WikiPolicy.can_access(user,wiki) }
+    end
+  end
+  
 end
