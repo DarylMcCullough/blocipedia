@@ -2,23 +2,24 @@ class WikiPolicy < ApplicationPolicy
   
   attr_reader :user, :wiki
   
-    def self.can_access(user, wiki)
-      if ! user.present?
+    def self.can_access(user, wiki) # for everything other than delete and create
+      if ! user.present? # must be logged in to do anything
         return false
       end
     
-      if user.admin?
+      if user.admin? # an admin can do anything
         return true
       end
       
-      if wiki.user == user
+      if wiki.user == user # the owner of a wiki can access it
         return true
       end
 
       if wiki.private
-        return wiki.collaborating_users.include?(user)
+        return wiki.collaborating_users.include?(user) # only collaborators can access private wiki
       end
-      return true
+      
+      return true # everyone can access non-private wiki
     end
 
   
@@ -27,27 +28,27 @@ class WikiPolicy < ApplicationPolicy
     @wiki = wiki
   end
   
-  def update? # user must be logged in to update a wiki
+  def update? # update requires access
     WikiPolicy.can_access(user,wiki)
   end
   
-  def edit? # user must be logged in to edit a wiki
+  def edit? # edit requires access
     WikiPolicy.can_access(user,wiki)
   end
   
-  def new? # user must be logged in to create a wiki
+  def new? # anyone can create non-private wiki (default for new)
     WikiPolicy.can_access(user,wiki)
   end
   
-  def show?
+  def show? # viewing requires access
     WikiPolicy.can_access(user,wiki)
   end
   
-  def destroy?
+  def destroy? # only an admin can destroy a wiki
     user.present? && user.admin? # only an admin can destroy a wiki
   end
   
-  def create?
+  def create? # to create a wiki, you must be able to access it
     if ! WikiPolicy.can_access(user,wiki)
       return false
     end
@@ -64,7 +65,7 @@ class WikiPolicy < ApplicationPolicy
       @scope = scope
     end
     
-    def resolve
+    def resolve # only return those wikis the user can access
         scope.select{ |wiki| WikiPolicy.can_access(user,wiki) }
     end
   end
