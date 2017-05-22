@@ -1,0 +1,7 @@
+<li>
+    <span class="email"><%= collaborator.user.email %>
+    <% if current_user == collaborator.wiki.user %> 
+    - <%= link_to "Remove", [collaborator.wiki, collaborator], class: 'glyphicon glyphicon-remove', method: :delete %>
+    <% end %>
+    </span>
+</li>

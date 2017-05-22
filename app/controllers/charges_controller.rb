@@ -26,11 +26,8 @@ class ChargesController < ApplicationController
   end
   
   def downgrade
-   puts "in downgrade"
     if current_user.present?
       current_user.downgrade
-      puts "in downgrade, current_user.role: #{current_user.role}"
-      puts "in downgrade, current_user.email: #{current_user.email}"
      end
 
    flash[:notice] = "Sorry you didn't appreciate your premium membership. You can always sign up again."

@@ -5,6 +5,8 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
          
   has_many :wikis, dependent: :destroy
+  has_many :collaborators, dependent: :destroy
+
 
   after_initialize :init
   enum role: [:standard, :premium, :admin]
@@ -17,21 +19,19 @@ class User < ActiveRecord::Base
   
   def downgrade
     if self.premium?
-      puts "in downgrade"
       self.standard!
       self.wikis.each do |wiki|
-        puts "wiki-id: #{wiki.id}"
         wiki.private = false
         wiki.save!
-        puts "wiki.private: #{wiki.private}"
-
       end
-      
     end
-    
   end
   
   def init
     self.role ||= :standard
+  end
+  
+  def collaborates_on
+    collaborations.wikis
   end
 end
