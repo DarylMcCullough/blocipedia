@@ -2,7 +2,10 @@ require 'rails_helper'
 
 RSpec.describe WikisController, type: :controller do
   let(:my_user) { create(:user) }
+  let(:other_user) { create(:user) }
   let(:my_wiki) { create(:wiki, user: my_user) }
+  let(:other_wiki) { create(:wiki, user: other_user, private: true) }
+
     
   context "member user doing CRUD on a wiki" do
     before do
@@ -30,6 +33,11 @@ RSpec.describe WikisController, type: :controller do
       it "assigns my_wiki to @wiki" do
         get :show, {id: my_wiki.id}
         expect(assigns(:wiki)).to eq(my_wiki)
+      end
+      
+      it "fails for a private wiki if not a collaborator" do
+        get :show, {id: other_wiki.id}
+        expect(response).to redirect_to(wikis_path)
       end
     end
     
@@ -78,6 +86,44 @@ RSpec.describe WikisController, type: :controller do
         expect(response).to redirect_to Wiki.last
       end
     end
+    
+    describe "DELETE destroy" do
+
+      it "fails to delete the wiki when non-admin is logged in" do
+        delete :destroy, {id: my_wiki.id}
+        count = Wiki.where({id: my_wiki.id}).size
+        expect(count).to eq 1
+      end
+
+      it "redirects to wikis index" do
+        delete :destroy, {id: my_wiki.id}
+        expect(response).to redirect_to wikis_path
+      end
+    end
+    
+  end
+  
+  context "admin doing CRUD on wiki" do
+    before do
+        my_user.confirm
+        my_user.admin!
+        sign_in my_user
+        my_wiki
+    end
+
+    describe "DELETE destroy" do
+
+      it "deletes the wiki" do
+        delete :destroy, {id: my_wiki.id}
+        count = Wiki.where({id: my_wiki.id}).size
+        expect(count).to eq 0
+      end
+
+      it "redirects to wikis index" do
+        delete :destroy, {id: my_wiki.id}
+        expect(response).to redirect_to wikis_path
+      end
+    end
   end
   
   context "user not logged in doing CRUD on a wiki" do
@@ -108,16 +154,7 @@ RSpec.describe WikisController, type: :controller do
     describe "GET show" do
       it "returns http success" do
         get :show, {id: my_wiki.id}
-        expect(response).to have_http_status(:success)
-      end
-      it "renders the #show view" do
-        get :show, {id: my_wiki.id}
-        expect(response).to render_template :show
-      end
- 
-      it "assigns my_wiki to @wiki" do
-        get :show, {id: my_wiki.id}
-        expect(assigns(:wiki)).to eq(my_wiki)
+        expect(response).to redirect_to wikis_path
       end
     end
 

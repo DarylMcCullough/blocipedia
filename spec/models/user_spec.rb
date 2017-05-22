@@ -32,9 +32,7 @@ RSpec.describe User, type: :model do
      it "should make all wikis non-private" do
          wiki.user.premium!
          expect(wiki.private).to eq(true)
-         puts "wiki.private: #{wiki.private}"
          wiki.user.downgrade
-         puts "now, in spec, wiki.id: #{wiki.id}, wiki.private: #{wiki.private}"
          wiki.reload
          expect(wiki.private).to eq(false)
      end

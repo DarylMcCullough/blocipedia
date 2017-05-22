@@ -19,8 +19,8 @@ RSpec.describe ChargesController, type: :controller do
           user.confirm
           sign_in user
           user.premium!
-          post :downgrade 
-          puts "user.role: #{user.role}"
+          post :downgrade
+          user.reload
           expect(user.role).to eq("standard")
         end
    end
